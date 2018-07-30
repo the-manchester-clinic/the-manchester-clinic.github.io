@@ -1,0 +1,44 @@
+.image-carousel {
+	position: relative;
+	height: 500px;
+	width: 100%;
+	overflow: hidden;
+}
+.image-slide {
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+}
+.main-content-container {
+	width: 70%;
+	float: left;
+}
+.main-content {
+	padding: 20px
+}
+.side-content-container {
+	width: 30%;
+	float: left;
+}
+.side-content-block:first-of-type {
+	margin-top: 20px;
+}
+.side-content-block {
+	text-align: center;
+	margin: 10px;
+	padding: 5px;
+	background-color: #CED4DC;
+	border: solid 2px #9DA9B9;
+}
+.side-content-block .title {
+	margin: 12px 0px;
+	font-size: 110%;
+	font-weight: 600;
+	color: #0b2a50;
+}
+.headline {
+	font-size: 140%;
+	font-weight: 600;
+	color: #0b2a50;
+}
