@@ -56,7 +56,7 @@ p {
 	font-weight: bold;
 }
 .horizontal-rule {
-	width: 100%;
+	width: auto;
 	border-style: solid;
 	border-color: #0b2a50;
 	border-width: 2px;
