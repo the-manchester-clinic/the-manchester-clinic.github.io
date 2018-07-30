@@ -3,21 +3,12 @@
 		<title>The Manchester Clinic</title>
 		<link rel="stylesheet" type="text/css" href="assets/styles/basic.css"></link>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="assets/javascript/header.js"></script>
 		<script src="assets/javascript/carousel.js"></script>
+		<script src="assets/javascript/footer.js"></script>
 	</head>
-	<body onLoad="initCarousel()">
+	<body onLoad="initHeader();initCarousel();initFooter();">
 		<div id="header-bar-container" class="header-bar-container">
-			<div class="header-bar">
-				<a href="index.html">
-					<img class="header-logo" src="assets/images/MOCS-Logo.png"></img>
-				</a>
-				<span class="header-menu">
-					<span class="header-menu-item current"><a href="index.html">Home</a></span>
-					<span class="header-menu-item"><a href="contact.html">Contact us</a></span>
-				</span>
-				<div class="clear-float"></div>
-			</div>
-			<div class="horizontal-rule"></div>
 		</div>
 		<div class="content-container">
 			<div class="content">
@@ -49,8 +40,7 @@
 				<div class="clear-float"></div>
 			</div>
 		</div>
-		<div class="footer-container">
-			<div class="footer">&copy; 2018 The Manchester Clinic.  All rights reserved.</div>
+		<div id="footer-container" class="footer-container">
 		</div>
 	</body>
 </html>
