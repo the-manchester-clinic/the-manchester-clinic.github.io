@@ -11,7 +11,7 @@ iframe.map-frame {
 	height: 350px;
 }
 .tmc-details-container {
-	margin: 20px 0px;
+	margin: 20px 0px 0px 0px;
 }
 .contact-details-container {
 	width: 30%;
@@ -21,11 +21,11 @@ iframe.map-frame {
 	text-align: center;
 	margin: 10px;
 }
-.public-transport-container{
+.transport-container{
 	width: 70%;
 	float: left;
 }
-.public-transport-block{
+.transport-block{
 	margin: 10px 0px;
 	padding: 0px 30px;
 	border-left: 1px solid #0b2a50;
