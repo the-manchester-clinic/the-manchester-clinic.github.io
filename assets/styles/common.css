@@ -76,6 +76,14 @@ p {
 	flex: 1 0 auto;
 	width: 100%;
 }
+.page-title {
+	margin: 20px auto;
+	max-width: 800px;
+	text-align: center;
+	font-size: 180%;
+	font-weight: 600;
+	color: #0b2a50;
+}
 
 .clear-float {
 	clear: both;

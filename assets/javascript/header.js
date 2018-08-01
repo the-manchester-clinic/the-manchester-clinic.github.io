@@ -1,11 +1,15 @@
 		
 function initHeader(page) {
 	var homeCurrentClass = "";
+	var serviceCurrentClass = "";
 	var contactCurrentClass = "";
 	
 	switch (page) {
 		case "home":
 			homeCurrentClass = "current";
+			break;
+		case "service":
+			serviceCurrentClass = "current";
 			break;
 		case "contact":
 			contactCurrentClass = "current";
@@ -19,6 +23,7 @@ function initHeader(page) {
 				</a>
 				<span class="header-menu">
 					<span class="header-menu-item ${homeCurrentClass}"><a href="index.html">Home</a></span>
+					<span class="header-menu-item ${serviceCurrentClass}"><a href="service.html">What we offer</a></span>
 					<span class="header-menu-item ${contactCurrentClass}"><a href="contact.html">Contact us</a></span>
 				</span>
 				<div class="clear-float"></div>
