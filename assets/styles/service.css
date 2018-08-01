@@ -28,30 +28,41 @@
 	font-size: 110%;
 }*/
 
+.intro-text {
+	padding: 0px 20px;
+	text-align: center;
+}
+.outro-text {
+	padding: 0px 20px;
+	text-align: center;
+}
+
+.services-section {
+	display: flex;
+	flex-direction: row;
+}
+
 .side-image-container {
 	width: 40%;
-	float: left;
-	position: relative;
+	height: 100%;
 }
 .side-image-box {
-	width: 100% - 30px; /* The subtracted value is the sum of the left and right pads of this element */
-	padding: 20px 10px 20px 20px;
+	height: calc(100% - 40px); /* subtract the sum of the top + bottom paddings of this element */
 }
 .side-image-box-2 {
-	position: relative;
-	height: 480px;
-	overflow: hidden;
+	height: 100%;
+	background-image: url(../images/half-landing.jpg);
+	background-position: -170px 0px;
+	background-size: auto 500px;
+	background-repeat: no-repeat;
 }
 .side-image {
-	position: absolute;
-	height: 480px;
-	left: -140px;
+
 }
 
 .main-content-container {
 	width: 60%;
-	float: left;
 }
 .main-content {
-	padding: 20px 20px 20px 10px;
+	padding: 20px 20px 20px 0px;
 }
