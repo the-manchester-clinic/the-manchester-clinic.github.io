@@ -49,7 +49,7 @@ p {
 }
 .header-menu-item a {
 	display: inline-block;
-	margin-top: 13px;
+	margin: 13px auto;
 	font-weight: normal;
 	padding: 0px 10px;
 }
