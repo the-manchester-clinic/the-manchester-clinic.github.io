@@ -66,3 +66,7 @@
 .main-content {
 	padding: 20px 20px 20px 0px;
 }
+
+.facilities-list li {
+	margin-top: 3px;
+}
