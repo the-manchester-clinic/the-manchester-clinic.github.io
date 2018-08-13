@@ -36,6 +36,7 @@ p {
 .header-logo {
 	width: 330px;
 	margin: 7px;
+	max-width: 100%;
 }
 .header-menu {
 	float: right;
@@ -101,4 +102,10 @@ p {
 	margin: auto;
 	text-align: center;
 	font-size: 70%;
+}
+
+@media screen and (max-width: 768px) {
+	.header-menu-item.current, .header-menu-item:hover {
+		border: none;
+	}
 }

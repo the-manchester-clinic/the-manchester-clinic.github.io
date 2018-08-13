@@ -42,3 +42,15 @@
 	font-weight: 600;
 	color: #0b2a50;
 }
+
+@media screen and (max-width: 768px) {
+	.image-carousel {
+		height: 200px;
+	}
+	.main-content-container {
+		width: 100%;
+	}
+	.side-content-container {
+		width: 100%;
+	}
+}

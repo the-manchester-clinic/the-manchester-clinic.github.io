@@ -1,33 +1,3 @@
-/*iframe.map-frame {
-	width: 100%;
-	height: 350px;
-}
-.tmc-details-container {
-	margin: 20px 0px 0px 0px;
-}
-.contact-details-container {
-	width: 30%;
-	float: left;
-}
-.contact-details-block {
-	text-align: center;
-	margin: 10px;
-}
-.transport-container{
-	width: 70%;
-	float: left;
-}
-.transport-block{
-	margin: 10px 0px;
-	padding: 0px 30px;
-	border-left: 1px solid #0b2a50;
-}
-.sub-heading {
-	font-weight:bold;
-	color: #0b2a50;
-	font-size: 110%;
-}*/
-
 .intro-text {
 	padding: 0px 20px;
 	text-align: center;
@@ -43,30 +13,33 @@
 }
 
 .side-image-container {
-	width: 40%;
+	width: 30%;
 	height: 100%;
 }
-.side-image-box {
-	height: calc(100% - 40px); /* subtract the sum of the top + bottom paddings of this element */
-}
-.side-image-box-2 {
-	height: 100%;
-	background-image: url(../images/half-landing.jpg);
-	background-position: -170px 0px;
-	background-size: auto 500px;
-	background-repeat: no-repeat;
+.side-image-inner-container {
+	margin: 20px;
+	overflow: hidden;
 }
 .side-image {
-
+	height: 600px;
 }
 
 .main-content-container {
-	width: 60%;
+	width: 70%;
 }
 .main-content {
-	padding: 20px 20px 20px 0px;
+	padding: 20px;
 }
 
 .facilities-list li {
 	margin-top: 3px;
+}
+
+@media screen and (max-width: 768px) {
+	.side-image-container {
+		display: none;
+	}
+	.main-content-container {
+		width: 100%;
+	}
 }

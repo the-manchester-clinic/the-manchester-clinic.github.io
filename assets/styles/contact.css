@@ -27,3 +27,19 @@ iframe.map-frame {
 	color: #0b2a50;
 	font-size: 110%;
 }
+
+@media screen and (max-width: 768px) {
+	iframe.map-frame {
+		height: 200px;
+	}
+	.contact-details-container {
+		width: 100%;
+	}
+	.transport-container {
+		width: 100%;
+	}
+	.transport-block {
+		text-align: center;
+		border: none;
+	}
+}
