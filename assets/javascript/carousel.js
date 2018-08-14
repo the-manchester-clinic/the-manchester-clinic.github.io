@@ -1,4 +1,5 @@
 function initCarousel() {
+	document.getElementsByClassName('image-carousel')[0].style.opacity="1"
 	setTimeout(nextSlide, 5000);
 }
 
