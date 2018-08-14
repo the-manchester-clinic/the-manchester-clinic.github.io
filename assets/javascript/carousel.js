@@ -1,6 +1,7 @@
 function initCarousel() {
 	document.getElementsByClassName('image-carousel')[0].style.opacity="1"
 	setTimeout(nextSlide, 5000);
+	typewriter()
 }
 
 function nextSlide() {
@@ -21,3 +22,18 @@ function nextSlide() {
 	
 	setTimeout(nextSlide, 5000);
 }
+
+function typewriter() {
+	var app = document.getElementById('typewriter');
+
+	var typewriter = new Typewriter(app, {
+		loop: true
+	});
+
+	typewriter.typeString('Welcome to The Manchester Clinic')
+		.pauseFor(2500)
+		.deleteAll()
+		.typeString('Read more about us below')
+		.pauseFor(2500)
+		.start();
+	}
