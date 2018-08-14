@@ -1,3 +1,35 @@
+@media (max-width: 1278px) {
+	.img-container {
+		display: none;
+	}
+	.text-container img {
+		display: table-cell;
+		max-width: 60%;
+		margin-right: 15%;
+	}
+	.text-carousel {
+		top: 143px;
+	}
+}
+
+@media (min-width: 1278px) {
+	tr .text-container{
+		padding: 30px 0 0 0;
+	}
+	.text-container img {
+		display: none;
+	}
+	.img-container {
+		display: table-cell;
+	}
+	.text-carousel {
+		top: 110px;
+	}
+}
+
+.content{
+	padding-bottom: 0;
+}
 .image-carousel {
 	opacity:0;
     transition: opacity 2s;
@@ -15,7 +47,6 @@
 .text-carousel{
 	position: absolute;
     left: 10%;
-    top: 110px;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.9);
     width: 40%;
@@ -42,9 +73,10 @@
 	font-family: 'Merriweather', serif;
 	line-height: 40px;
 }
+
 tr .text-container{
 	padding: 30px;
-	max-width: 100%;
+	width: 70%;
 	text-align: justify;
 }
 .img-container {
@@ -62,3 +94,73 @@ tr img{
 	float: right;
 	height: auto;
 }
+.img-circle{
+	border-radius: 50%;
+}
+
+.grey-box {
+	padding: 30px 0; 
+	background-color: #000519;
+	width: 100%;
+	color: #a1917c;
+	text-align: center;
+}
+.grey-box .headline {
+	font-family: 'Lato', sans-serif;
+	font-size: 25pt;
+}
+.grey-box .message{
+	font-size: 20pt;
+	margin-bottom: 20px;
+}
+
+.insurance-box img{
+	max-width: 10%;
+	width: 20%;
+	padding: 5px;
+	margin: 20px 50px;
+	border: 1px solid #dddddd;
+}
+.insurance-box img:hover {
+	border-color: #a1917c !important;
+}
+
+.center.headline {
+    display: grid;
+    text-align: center;
+}
+.large-text {
+	font-size: 25pt;
+}
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+blockquote {
+	background: #f9f9f9;
+	border-left: 10px solid #ccc;
+	margin: 1.5em 10px;
+	padding: 0.5em 10px;
+	quotes: "\201C""\201D";
+  }
+  blockquote:before {
+	color: #ccc;
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+  }
+  /* blockquote:after {
+	color: #ccc;
+	content: close-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-left: 0.25em;
+	vertical-align: -0.4em;
+  } */
+  blockquote p {
+	display: inline;
+  }
