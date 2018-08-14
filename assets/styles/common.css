@@ -211,8 +211,19 @@ p {
 }
 .gray {
 	filter: grayscale(100%);
-	transition: filter 0.5s;
+	opacity: 0.6;
+	transition: all 0.5s;
 }
 .gray:hover{
-	filter: grayscale(0%)
+	filter: grayscale(0%);
+	opacity: 1;
+}
+.img-shadow{
+	box-shadow: 0 80px 40px -40px rgba(0, 0, 0, 1);
+	transition: box-shadow 0.3s
+}
+.img-slide{
+	position: relative;
+	top: 0;
+	transition: top 0.5s
 }

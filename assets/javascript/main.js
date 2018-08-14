@@ -1,6 +1,17 @@
 function imageFade() {
     $(".fade-in").css("opacity","1")
 }
+
+function imageSlide() {
+	$(".img-slide-container").mouseover(function(){
+		$(this).find(".img-slide").css("top", "-15");
+		$(this).find(".img-shadow").css("box-shadow","0 80px 45px -45px rgba(0, 0, 0, 1)")
+	})
+	$(".img-slide-container").mouseleave(function(){
+		$(this).find(".img-slide").css("top", "0");
+		$(this).find(".img-shadow").css("box-shadow","0 80px 40px -40px rgba(0, 0, 0, 1)")
+	})
+}
 			
 function initFooter() {
     const footerHTML = `<div class="footer">&copy; 2018 The Manchester Clinic.  All rights reserved.</div>`;

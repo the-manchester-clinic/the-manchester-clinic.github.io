@@ -10,7 +10,7 @@
 		<script src="assets/javascript/main.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
-	<body onLoad="initHeader('home');initFooter();imageFade();initCarousel()">
+	<body onLoad="initHeader('home');initFooter();imageFade();initCarousel();imageSlide()">
 		<div id="header-bar-container" class="header-bar-container">
 		</div>
 		<div class="content-container">
@@ -64,11 +64,20 @@
 				</div>
 			</div>
 			<div class="grey-box">		
-				<span class="headline">Something about insurance...</span><br>
+				<span class="headline">We are approved by all major insurance providers</span><br>
 				<div class="insurance-box">
-					<img class="gray fade-in" src="assets\images\insurance\bupa.png">
-					<img class="gray fade-in" src="assets\images\insurance\bupa.png">
-					<img class="gray fade-in" src="assets\images\insurance\bupa.png">
+					<img class="gray" src="assets\images\insurance\bupa.jpg">
+					<img class="gray" src="assets\images\insurance\axa-ppp.jpg">
+					<img class="gray" src="assets\images\insurance\aviva.jpg">
+					<img class="gray" src="assets\images\insurance\wpa.jpg">
+
+				</div>
+				<div class="insurance-box">
+					<img class="gray" src="assets\images\insurance\cigna.jpg">
+					<img class="gray" src="assets\images\insurance\benenden.jpg">
+					<img class="gray" src="assets\images\insurance\simply-health.jpg">
+					<img class="gray" src="assets\images\insurance\vitality.jpg">
+
 				</div>
 				<span class="message">Something else about insurance...</span>
 			</div>
@@ -79,11 +88,14 @@
 								The Manchester Clinic is great!
 							</blockquote>
 						</div>
-						<div>	
+						<div class="gold-box">	
 							<span class="large-text center headline">Accreditation</span>
-							<div style="padding:20px"><img width="200px" class="img-border center-image fade-in" src="assets\images\insurance\bupa.png"></div>
-						<p>
-								We have CQC Accreditation.
+							<div class="img-slide-container" style="padding:40px">
+								<img width="300px" class="img-slide center-image" src="assets\images\accreditation\cqc.png">
+								<img style="margin-top: -100px" height="100px" width="300px" class="img-shadow center-image" src="http://1x1px.me/FF4D00-0.png">
+							</div>
+							<p>
+								The Manchester Clinic has CQC Accreditation.
 							</p>
 						</div>
 					</div>
