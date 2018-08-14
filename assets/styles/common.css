@@ -15,9 +15,6 @@
 		width: 100%;
 		text-align: center;
 	}
-	.menu span::after{
-		content: '<br>'
-	}
 }
 
 @media (min-width: 1278px) {
@@ -67,6 +64,11 @@ p {
 	max-width: 70%;
 	padding: 5px 0 5px;
 }
+@media (max-width: 1278px) {
+	.header-bar {
+		max-width: 100%;
+	}
+}
 .header-logo {
 	width: 330px;
 	margin: 7px;
@@ -98,11 +100,9 @@ p {
 	border-width: 2px;
 }
 .menu {
-	margin: 10px;
+	margin: 10px 0px;
 	color: #a1917c;
-}
-.menu:hover {
-	cursor: pointer;
+	position: relative;
 }
 .menu-items{
 	position: absolute;
@@ -120,15 +120,11 @@ p {
 	border-bottom: 1px solid #a1917c;
 	padding: 10px;
 }
-.menu-items .logo{
-	margin-top:22px;
-	padding:10px;
-}
 .close-menu {
 	position: absolute;
 	font-size: 21pt;
-    top: 15%;
     left: 95%;
+	cursor: pointer;
 }
 .fa-bars {
 	cursor: pointer;

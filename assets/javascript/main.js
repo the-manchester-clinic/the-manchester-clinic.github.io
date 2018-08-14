@@ -47,17 +47,16 @@ function initHeader(page) {
                 </span>
                 <div class="menu">
                     <i class="fas fa-bars"></i>
+					<div class="menu-items" style="display:none;">
+						<div class="close-menu"><i class="fas fa-times"></i></div>
+						<table style="width:100%;">
+							<tr><td><a href="index.html">Home</a></td></tr>
+							<tr><td><a href="facilities.html">Facilities</a></td></tr>
+							<tr><td><a href="contact.html">Contact us</a></td></tr>
+						</table>
+					</div>
                 </div>
                 <div class="clear-float"></div>
-            </div>
-			<div class="menu-items" style="display:none;">
-				<div class="close-menu"><i class="fas fa-times"></i></div>
-				<table style="width:100%;">
-					<tr><a class="logo" href="index.html">The Manchester Clinic</a></tr>
-					<tr><td><span class="${homeCurrentClass}"><a href="index.html">Home</a></span></td></tr>
-					<tr><td><span class="${facilitiesCurrentClass}"><a href="facilities.html">Facilities</a></span></td></tr>
-                	<tr><td><span class="${contactCurrentClass}"><a href="contact.html">Contact us</a></span></td></tr>
-				</table>
             </div>
             `;
 	
