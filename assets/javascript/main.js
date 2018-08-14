@@ -1,3 +1,11 @@
+function initMain(parameters) {
+	console.log(parameters)
+	initHeader(parameters.header)
+	imageFade()
+	imageSlide()
+	initFooter()
+}
+
 function imageFade() {
     $(".fade-in").css("opacity","1")
 }
