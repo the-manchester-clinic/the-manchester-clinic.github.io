@@ -3,34 +3,12 @@
     src: url(../fonts/CapitalisTypOasis.ttf);
 }
 @media (min-width: 411px) {
-	/* body, table {
-		font-size: 2vw;
-	} */
-	.img-container {
-		display: none;
-	}
-	.text-container img {
-		display: block;
-		max-width: 60%;
-		margin-right: 15%;
-	}
 	.content {
 		max-width: 90% !important;
 	}
 }
 
 @media (min-width: 768px) {
-	/* body, table {
-		font-size: 2.1vw;
-	} */
-	.img-container {
-		display: none;
-	}
-	.text-container img {
-		display: block;
-		max-width: 60%;
-		margin-right: 15%;
-	}
 	.content {
 		max-width: 90% !important;
 	}
@@ -43,17 +21,6 @@
 }
 
 @media (min-width: 992px) {
-	/* body, table {
-		font-size: 1.5vw;
-	} */
-	.img-container {
-		display: none;
-	}
-	.text-container img {
-		display: block;
-		max-width: 60%;
-		margin-right: 15%;
-	}
 	.content {
 		max-width: 75% !important;
 	}
@@ -70,7 +37,6 @@
 	.menu-items {
 		width: 100%;
 		text-align: center;
-		/* display: block !important; */
 	}
 	.menu span::after{
 		content: '<br>'
@@ -78,15 +44,6 @@
 }
 
 @media (min-width: 1278px) {
-	/* body, table {
-		font-size: 12pt;
-	} */
-	.img-container {
-		display: table-cell;
-	}
-	.text-container img {
-		display: none;
-	}
 	.menu {
 		display: none;
 	}
