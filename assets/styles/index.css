@@ -65,12 +65,19 @@
 }
 .carousel-container .headline {
 	text-align: center;
-	width: 45%;
-	padding-right: 5%;
-	height: 200px;
+	width: 50%;
 	border-right: 1px solid rgba(255, 255, 255, 0.5); 
 	display: flex;
 	align-items: center;
+	float: left;
+}
+.typewriter {
+	font-size: 140%;
+	color: #a1917c;
+	font-family: 'Merriweather', serif;
+	line-height: 40px;
+	width: 45%;
+	float: right;
 }
 .headline {
 	font-size: 140%;
