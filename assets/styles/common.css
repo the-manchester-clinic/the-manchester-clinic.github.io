@@ -2,29 +2,6 @@
     font-family: CapitalisTypOasis;
     src: url(../fonts/CapitalisTypOasis.ttf);
 }
-@media (min-width: 411px) {
-	.content {
-		max-width: 90% !important;
-	}
-}
-
-@media (min-width: 768px) {
-	.content {
-		max-width: 90% !important;
-	}
-}
-
-@media (max-width: 992px) {
-	.image-carousel {
-		height: 50% !important;
-	}
-}
-
-@media (min-width: 992px) {
-	.content {
-		max-width: 75% !important;
-	}
-}
 
 /* burger break-point */
 @media (max-width: 1278px) {
@@ -123,7 +100,6 @@ p {
 .menu {
 	margin: 10px;
 	color: #a1917c;
-	font-size: 2vw;
 }
 .menu:hover {
 	cursor: pointer;
@@ -166,10 +142,14 @@ p {
 .content {
 	margin: auto;
 	background-color: #ffffff;
-	max-width: 70%;
+	max-width: 75%;
 	padding-bottom: 40px;
-	flex: 1 0 auto;
 	width: 100%;
+}
+@media (max-width: 992px) {
+	.content {
+		max-width: 90%;
+	}
 }
 
 .page-title {
