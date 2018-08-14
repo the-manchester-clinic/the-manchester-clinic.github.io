@@ -20,15 +20,15 @@ function initFooter() {
 
 function initHeader(page) {
 	var homeCurrentClass = "";
-	var serviceCurrentClass = "";
+	var facilitiesCurrentClass = "";
 	var contactCurrentClass = "";
 	
 	switch (page) {
 		case "home":
 			homeCurrentClass = "current";
 			break;
-		case "service":
-			serviceCurrentClass = "current";
+		case "facilities":
+			facilitiesCurrentClass = "current";
 			break;
 		case "contact":
 			contactCurrentClass = "current";
@@ -42,7 +42,7 @@ function initHeader(page) {
 				</a>
 				<span class="header-menu">
 					<span class="header-menu-item ${homeCurrentClass}"><a href="index.html">Home</a></span>
-					<span class="header-menu-item ${serviceCurrentClass}"><a href="service.html">Facilities</a></span>
+					<span class="header-menu-item ${facilitiesCurrentClass}"><a href="facilities.html">Facilities</a></span>
 					<span class="header-menu-item ${contactCurrentClass}"><a href="contact.html">Contact us</a></span>
                 </span>
                 <div class="menu">
@@ -55,7 +55,7 @@ function initHeader(page) {
 				<table style="width:100%;">
 					<tr><a class="logo" href="index.html">The Manchester Clinic</a></tr>
 					<tr><td><span class="${homeCurrentClass}"><a href="index.html">Home</a></span></td></tr>
-					<tr><td><span class="${serviceCurrentClass}"><a href="service.html">Facilities</a></span></td></tr>
+					<tr><td><span class="${facilitiesCurrentClass}"><a href="facilities.html">Facilities</a></span></td></tr>
                 	<tr><td><span class="${contactCurrentClass}"><a href="contact.html">Contact us</a></span></td></tr>
 				</table>
             </div>
