@@ -61,7 +61,10 @@
 	padding: 20px
 }
 .carousel-container {
-	padding: 40px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
 }
 .carousel-container .headline {
 	text-align: center;

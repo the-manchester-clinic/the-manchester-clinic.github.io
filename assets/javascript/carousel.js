@@ -36,4 +36,4 @@ function typewriter() {
 		.typeString('Read more about us below')
 		.pauseFor(2500)
 		.start();
-	}
+}
