@@ -157,7 +157,7 @@ p {
 .horizontal-rule {
 	width: auto;
 	border-style: solid;
-	border-color: #0b2a50;
+	border-color: #a1917c;
 	border-width: 2px;
 }
 .menu {
@@ -214,12 +214,13 @@ p {
 }
 
 .page-title {
+	font-family: 'Merriweather', serif;
 	margin: 20px auto;
 	max-width: 800px;
 	text-align: center;
 	font-size: 180%;
-	font-weight: 600;
-	color: #0b2a50;
+	font-weight: 100;
+	color: #a1917c;
 }
 
 .clear-float {
