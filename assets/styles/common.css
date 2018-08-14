@@ -211,8 +211,10 @@ p {
 }
 .gray {
 	filter: grayscale(100%);
-	transition: filter 0.5s;
+	opacity: 0.3;
+	transition: all 0.5s;
 }
 .gray:hover{
-	filter: grayscale(0%)
+	filter: grayscale(0%);
+	opacity: 1;
 }
