@@ -139,28 +139,40 @@ tr img{
 }
 
 blockquote {
-	background: #f9f9f9;
-	border-left: 10px solid #ccc;
-	margin: 1.5em 10px;
-	padding: 0.5em 10px;
-	quotes: "\201C""\201D";
-  }
-  blockquote:before {
-	color: #ccc;
-	content: open-quote;
-	font-size: 4em;
-	line-height: 0.1em;
-	margin-right: 0.25em;
-	vertical-align: -0.4em;
-  }
-  /* blockquote:after {
-	color: #ccc;
-	content: close-quote;
-	font-size: 4em;
-	line-height: 0.1em;
-	margin-left: 0.25em;
-	vertical-align: -0.4em;
-  } */
-  blockquote p {
-	display: inline;
-  }
+background: #f9f9f9;
+border-left: 10px solid #ccc;
+margin: 1.5em 10px;
+padding: 0.5em 10px;
+quotes: "\201C""\201D";
+}
+blockquote:before {
+color: #ccc;
+content: open-quote;
+font-size: 4em;
+line-height: 0.1em;
+margin-right: 0.25em;
+vertical-align: -0.4em;
+}
+/* blockquote:after {
+color: #ccc;
+content: close-quote;
+font-size: 4em;
+line-height: 0.1em;
+margin-left: 0.25em;
+vertical-align: -0.4em;
+} */
+blockquote p {
+display: inline;
+}
+
+.gold-box{
+	padding: 20px;
+	background: #a1917c;
+	border-radius: 10px;
+}
+.gold-box .headline{
+	color: #333;
+}
+.gold-box p{
+	color: #f0f0f0
+}
