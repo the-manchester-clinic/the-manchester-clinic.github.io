@@ -53,11 +53,11 @@ function initHeader(page) {
 	$("#header-bar-container").append(headerHTML);
 
 	$(".menu .fa-bars").click(function(){
-		$(".menu-items").css("display", "block")
+		$(".menu-items").slideDown()
 	})
 
 	$(".close-menu").click(function(){
-		$(".menu-items").css("display","none")
+		$(".menu-items").slideUp()
 	})	
 
 }
