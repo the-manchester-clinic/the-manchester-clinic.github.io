@@ -1,16 +1,111 @@
+@font-face {
+    font-family: CapitalisTypOasis;
+    src: url(../fonts/CapitalisTypOasis.ttf);
+}
+@media (min-width: 411px) {
+	/* body, table {
+		font-size: 2vw;
+	} */
+	.img-container {
+		display: none;
+	}
+	.text-container img {
+		display: block;
+		max-width: 60%;
+		margin-right: 15%;
+	}
+	.content {
+		max-width: 90% !important;
+	}
+}
+
+@media (min-width: 768px) {
+	/* body, table {
+		font-size: 2.1vw;
+	} */
+	.img-container {
+		display: none;
+	}
+	.text-container img {
+		display: block;
+		max-width: 60%;
+		margin-right: 15%;
+	}
+	.content {
+		max-width: 90% !important;
+	}
+}
+
+@media (max-width: 992px) {
+	.image-carousel {
+		height: 50% !important;
+	}
+}
+
+@media (min-width: 992px) {
+	/* body, table {
+		font-size: 1.5vw;
+	} */
+	.img-container {
+		display: none;
+	}
+	.text-container img {
+		display: block;
+		max-width: 60%;
+		margin-right: 15%;
+	}
+	.content {
+		max-width: 75% !important;
+	}
+}
+
+/* burger break-point */
+@media (max-width: 1278px) {
+	.header-menu {
+		display: none;
+	}
+	.header-bar {
+		text-align: center;
+	}
+	.menu-items {
+		width: 100%;
+		text-align: center;
+		/* display: block !important; */
+	}
+	.menu span::after{
+		content: '<br>'
+	}
+}
+
+@media (min-width: 1278px) {
+	/* body, table {
+		font-size: 12pt;
+	} */
+	.img-container {
+		display: table-cell;
+	}
+	.text-container img {
+		display: none;
+	}
+	.menu {
+		display: none;
+	}
+}
+
 body {
-	font-family: Calibri, Arial, Helvetica, sans-serif;
-	font-size: 12pt;
+	font-family: 'Lato', sans-serif;
+	font-size: 105%;
 	margin: 0px;
 	color: #444444;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	overflow-y: scroll;
+	text-align: justify;
 }
 a {
 	text-decoration: none;
-	color: #0b2a50;
+	color: #333;
 	font-weight: bold;
 }
 a.subtle-link {
@@ -28,33 +123,36 @@ p {
 .header-bar-container{
 	min-height:59px;
 	flex-shrink: 0;
+	border-bottom: 2px solid #333;
 }
 .header-bar {
 	margin: auto;
-	max-width: 900px;
+	max-width: 70%;
+	padding: 5px 0 5px;
 }
 .header-logo {
 	width: 330px;
 	margin: 7px;
-	max-width: 100%;
 }
 .header-menu {
 	float: right;
 	margin-right: 7px;
 	height: auto;
+	letter-spacing: 0.9px;
+	font-variant: small-caps;
 }
 .header-menu-item.current, .header-menu-item:hover {
 	display: inline-block;
-	border-top: solid 4px #0b2a50;
+	border-top: solid 4px #a1917c;
 }
 .header-menu-item a {
 	display: inline-block;
-	margin: 13px auto;
+	margin-top: 13px;
 	font-weight: normal;
 	padding: 0px 10px;
 }
 .header-menu-item.current a {
-	font-weight: bold;
+	font-weight: 100;
 }
 .horizontal-rule {
 	width: auto;
@@ -62,21 +160,59 @@ p {
 	border-color: #0b2a50;
 	border-width: 2px;
 }
+.menu {
+	margin: 10px;
+	color: #a1917c;
+	font-size: 2vw;
+}
+.menu:hover {
+	cursor: pointer;
+}
+.menu-items{
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+	background: white;
+	display: none;
+}
+.menu-items table {
+	text-align: center;
+	font-weight: 100;
+	font-variant: small-caps;
+}
+.menu-items td{
+	border-bottom: 1px solid #a1917c;
+	padding: 10px;
+}
+.menu-items .logo{
+	margin-top:22px;
+	padding:10px;
+	border-bottom: 1px solid #333;
+}
+.close-menu {
+	position: absolute;
+	font-size: 21pt;
+    top: 15%;
+    left: 95%;
+}
+.fa-bars {
+	cursor: pointer;
+}
 
 .content-container {
-	background-color: #E6E9ED;
 	flex: 1 0 auto;
 	display: flex;
 	flex-direction: column;
 }
 .content {
 	margin: auto;
-	max-width: 900px;
 	background-color: #ffffff;
+	max-width: 70%;
 	padding-bottom: 40px;
 	flex: 1 0 auto;
 	width: 100%;
 }
+
 .page-title {
 	margin: 20px auto;
 	max-width: 800px;
@@ -90,22 +226,26 @@ p {
 	clear: both;
 }
 
-.footer-container {
-	background-color: #E6E9ED;
-	bottom: 0px;
-	flex-shrink: 0;
-}
+.footer-container {}
+
 .footer {
 	padding: 4px 0px;
 	max-width: 900px;
-	background-color: #CED4DC;
 	margin: auto;
 	text-align: center;
 	font-size: 70%;
 }
+.logo {
+    display: inline-block;
+    margin-top: 16px;
+    font-family: CapitalisTypOasis;
+    font-size: 20px;
+	color: #a1917c;
+	font-weight: 100;
+	letter-spacing: 2px;
+}
 
-@media screen and (max-width: 768px) {
-	.header-menu-item.current, .header-menu-item:hover {
-		border: none;
-	}
+.fade-in {
+	opacity: 0;
+    transition: opacity 0.4s;
 }

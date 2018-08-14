@@ -1,45 +1,61 @@
 <html>
 	<head>
 		<title>The Manchester Clinic</title>
+		<link href="https://fonts.googleapis.com/css?family=Lato|Merriweather:300" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="assets/styles/common.css"></link>
 		<link rel="stylesheet" type="text/css" href="assets/styles/index.css"></link>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="assets/javascript/header.js"></script>
 		<script src="assets/javascript/carousel.js"></script>
-		<script src="assets/javascript/footer.js"></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="assets/javascript/main.js"></script>
 	</head>
-	<body onLoad="initHeader('home');initFooter();initCarousel();">
+	<body onLoad="initHeader('home');initFooter();imageFade();initCarousel()">
 		<div id="header-bar-container" class="header-bar-container">
 		</div>
 		<div class="content-container">
+			<div class="image-carousel">
+				<img class="image-slide" style="display:visible; top:-10px;" src="assets/images/resized/front-elevation.jpg"></img>
+				<img class="image-slide" style="display:none; top:-110px;" src="assets/images/resized/garden-side-2.jpg"></img>
+				<img class="image-slide" style="display:none; top:-45px;" src="assets/images/resized/consultation-room.jpg"></img>
+			</div>
+			<div class="text-carousel fade-in">
+				<div class="carousel-container">
+					<div class="headline">Private Medical Consulting Rooms in a Beautiful Victorian House</div>
+				</div>
+			</div>
 			<div class="content">
-				<div class="image-carousel">
-					<img class="image-slide" style="display:visible; top:-10px;" src="assets/images/resized/front-elevation.jpg"></img>
-					<img class="image-slide" style="display:none; top:-110px;" src="assets/images/resized/garden-side-2.jpg"></img>
-					<img class="image-slide" style="display:none; top:-45px;" src="assets/images/resized/consultation-room.jpg"></img>
-				</div>
 				<div class="main-content-container">
-					<div class="main-content">
-						<div class="headline">Private medical consulting rooms in a beautiful Victorian house</div>
-						<p><a href="index.html">The Manchester Clinic</a> provides modern medical consulting rooms in the beautiful leafy surroundings of the Ellesmere Park conservation area.  With rooms available on both a sessional and occasional basis, The Manchester Clinic provides a range of services to consultants to suit their needs and the needs of their patients.</p>
-						<p>Less than 15 minutes&prime; drive from the city centre, The Manchester Clinic is well-connected with motorways, trains, trams & buses all within a short distance.  If you would like to know more about The Manchester Clinic, please take a look at our services &amp; prices, view photos of our beautiful house, or contact us for further information.</p>
-					</div>
+					<table>
+						<tr>
+							<td class="text-container fade-in">
+								<div>
+									<div class="headline">Private medical consulting rooms in a beautiful Victorian house</div>
+									<p><a href="index.html">The Manchester Clinic</a> provides modern medical consulting rooms in the beautiful leafy surroundings of the Ellesmere Park conservation area.  With rooms available on both a sessional and occasional basis, The Manchester Clinic provides a range of services to consultants to suit their needs and the needs of their patients.</p>
+									<p>Less than 15 minutes&prime; drive from the city centre, The Manchester Clinic is well-connected with motorways, trains, trams & buses all within a short distance.  If you would like to know more about The Manchester Clinic, please take a look at our services &amp; prices, view photos of our beautiful house, or contact us for further information.</p>
+								</div>
+								<img class="img-border fade-in" src="assets\images\garden-side-2.jpg">
+							</td>
+							<td class="img-container">
+								<img class="img-border fade-in" src="assets\images\garden-side-2.jpg">
+							</td> 
+						</tr>
+					</table>	
+					<table>
+						<tr>
+							<td class="img-container">
+								<img class="img-border fade-in" src="assets\images\garden-side-2.jpg">
+							</td> 
+							<td class="text-container fade-in">
+								<div>
+									<div class="headline">Private medical consulting rooms in a beautiful Victorian house</div>
+									<p><a href="index.html">The Manchester Clinic</a> provides modern medical consulting rooms in the beautiful leafy surroundings of the Ellesmere Park conservation area.  With rooms available on both a sessional and occasional basis, The Manchester Clinic provides a range of services to consultants to suit their needs and the needs of their patients.</p>
+									<p>Less than 15 minutes&prime; drive from the city centre, The Manchester Clinic is well-connected with motorways, trains, trams & buses all within a short distance.  If you would like to know more about The Manchester Clinic, please take a look at our services &amp; prices, view photos of our beautiful house, or contact us for further information.</p>
+								</div>
+								<img class="img-border fade-in" src="assets\images\garden-side-2.jpg">
+							</td>
+						</tr>
+					</table>  
 				</div>
-				<div class="side-content-container">
-					<div class="side-content-block">
-						<div class="title">Opening Hours</div>
-						<p>Monday to Friday<br/>8am - 9pm</p>
-						<p>Saturday &amp; Sunday<br/>9am - 7pm</p>
-					</div>
-					<div class="side-content-block">
-						<div class="title">Enquiries</div>
-						<p>Click <a href="contact.html">here</a> to contact us<br/>
-						or<br/>
-						Call us now on 0161 667 4567</p>
-					</div>
-				</div>
-				<div class="clear-float"></div>
 			</div>
 		</div>
 		<div id="footer-container" class="footer-container">
