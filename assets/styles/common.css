@@ -210,3 +210,10 @@ p {
 	opacity: 0;
     transition: opacity 0.4s;
 }
+.gray {
+	filter: grayscale(100%);
+	transition: filter 0.5s;
+}
+.gray:hover{
+	filter: grayscale(0%)
+}
