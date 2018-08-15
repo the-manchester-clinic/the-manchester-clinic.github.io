@@ -203,3 +203,40 @@ p {
 	top: 0;
 	transition: top 0.5s
 }
+
+.gold-box{
+	padding: 20px;
+	background: #a1917c;
+	border-radius: 10px;
+}
+.gold-box .headline{
+	color: #333;
+}
+.gold-box p{
+	color: #f0f0f0
+}
+.grey-box {
+	padding: 30px 0; 
+	background-color: #000519;
+	width: 100%;
+	color: #a1917c;
+	text-align: center;
+}
+.grey-box .headline {
+	font-family: 'Lato', sans-serif;
+	font-size: 25pt;
+}
+.grey-box .message{
+	font-size: 20pt;
+	margin-bottom: 20px;
+}
+
+.text-center{
+	text-align: center;
+}
+.headline {
+	font-size: 140%;
+	color: #a1917c;
+	font-family: 'Merriweather', serif;
+	line-height: 40px;
+}
