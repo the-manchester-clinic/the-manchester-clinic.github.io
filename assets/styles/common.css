@@ -10,16 +10,23 @@
 	}
 	.header-bar {
 		text-align: center;
+		justify-content: center;
 	}
 	.menu-items {
 		width: 100%;
 		text-align: center;
+	}
+	.logo {
+		content: url("../logo/tmc-logo-sm.svg");
 	}
 }
 
 @media (min-width: 1278px) {
 	.menu {
 		display: none;
+	}
+	.logo {
+		content: url("../logo/tmc-logo.svg");
 	}
 }
 
@@ -55,11 +62,14 @@ p {
 }
 
 .header-bar-container{
+	text-align: center;
 	min-height:59px;
 	flex-shrink: 0;
 	border-bottom: 2px solid #333;
 }
 .header-bar {
+	display: flex;
+	align-items: center;
 	margin: auto;
 	max-width: 70%;
 	padding: 5px 0 5px;
@@ -74,15 +84,13 @@ p {
 	margin: 7px;
 }
 .header-menu {
-	float: right;
-	margin-right: 7px;
-	height: auto;
+	margin-left: auto;
 	letter-spacing: 0.9px;
 	font-variant: small-caps;
 }
-.header-menu-item.current, .header-menu-item:hover {
+.header-menu-item.current a, .header-menu-item:hover a {
 	display: inline-block;
-	border-top: solid 4px #a1917c;
+	color: #a1917c;
 }
 .header-menu-item a {
 	display: inline-block;
@@ -97,7 +105,7 @@ p {
 	border-width: 2px;
 }
 .menu {
-	margin: 10px 0px;
+	margin-bottom: 10px;
 	color: #a1917c;
 	position: relative;
 }
@@ -169,14 +177,11 @@ p {
 	font-size: 70%;
 }
 .logo {
-    display: inline-block;
-    margin-top: 16px;
-    font-family: CapitalisTypOasis;
-    font-size: 20px;
-	color: #a1917c;
-	font-weight: 100;
-	letter-spacing: 2px;
+	width: 330px;
+	height: auto;
+	padding: 10px;
 }
+
 
 .fade-in {
 	opacity: 0;
