@@ -90,9 +90,6 @@ p {
 	font-weight: normal;
 	padding: 0px 10px;
 }
-.header-menu-item.current a {
-	font-weight: 100;
-}
 .horizontal-rule {
 	width: auto;
 	border-style: solid;
