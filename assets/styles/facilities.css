@@ -1,3 +1,6 @@
+.content{
+	margin: 20px auto;
+}
 .intro-text {
 	padding: 0px 20px;
 	text-align: center;
@@ -42,7 +45,6 @@
 
 .facilities-box {
 	margin: auto;
-	display: table;
 	transition: all 0.5s;
 }
 .facilities-item {
