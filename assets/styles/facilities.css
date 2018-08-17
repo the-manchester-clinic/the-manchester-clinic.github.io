@@ -30,26 +30,15 @@
 	padding: 20px;
 }
 
-.facilities-list li {
-	margin-top: 3px;
-}
-
-@media screen and (max-width: 768px) {
-	.side-image-container {
-		display: none;
-	}
-	.main-content-container {
-		width: 100%;
-	}
-}
-
 .facilities-box {
-	max-width: fit-content;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	justify-content: center;
 	margin: auto;
 	transition: all 0.5s;
 }
 .facilities-item {
-	display: inline-block;
+	display: inline-grid;
 	padding: 10px 15px;
 	transition: all 0.5s;
 }
@@ -103,3 +92,18 @@
 .facilities-visible {
 	display: block;
 }
+
+/* burger break-point */
+@media (max-width: 1278px) {
+	.facilities-box {
+		grid-template-columns: auto auto;
+	}
+}
+
+/* mobile */
+@media (max-width: 645px) {
+	.facilities-box {
+		grid-template-columns: auto;
+	}
+}
+
