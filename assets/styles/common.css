@@ -171,7 +171,7 @@ p {
 }
 @media (max-width: 992px) {
 	.content {
-		max-width: 90%;
+		max-width: 97%;
 	}
 }
 
@@ -267,4 +267,5 @@ p {
 	color: #a1917c;
 	font-family: 'Merriweather', serif;
 	line-height: 40px;
+	text-align: left;
 }

@@ -1,3 +1,8 @@
+@media (max-width: 992px) {
+	.content {
+		max-width: 100%;
+	}
+}
 @media (max-width: 1000px) {
 	.carousel-container .headline {
 		display: none;
@@ -62,9 +67,7 @@
 	overflow: hidden;
 }
 @media (max-width: 992px) {
-	.image-carousel {
-		height: 50%;
-	}
+
 }
 .image-slide {
 	width: 100%;
@@ -78,9 +81,6 @@
     color: #fff;
     background-color: rgba(0, 0, 0, 0.9);
     width: 40%;
-}
-.main-content-container {
-	padding: 20px
 }
 .carousel-container {
 	display: flex;
