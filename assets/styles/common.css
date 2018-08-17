@@ -163,7 +163,7 @@ p {
 	flex-direction: column;
 }
 .content {
-	margin: auto;
+	margin: 20px auto;
 	background-color: #ffffff;
 	max-width: 75%;
 	padding-bottom: 40px;
