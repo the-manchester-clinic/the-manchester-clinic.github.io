@@ -43,3 +43,7 @@ iframe.map-frame {
 		border: none;
 	}
 }
+
+.contact-details-block .subtle-link {
+	word-break: break-all;
+}
