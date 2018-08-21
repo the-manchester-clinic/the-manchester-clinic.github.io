@@ -97,6 +97,8 @@
 	float: left;
 }
 .typewriter {
+	padding: 20px;
+	text-align: center;
 	font-size: 140%;
 	color: #a1917c;
 	font-family: 'Merriweather', serif;
