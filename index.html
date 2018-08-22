@@ -15,10 +15,11 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="assets/javascript/carousel.js"></script>
 		<script src="assets/javascript/main.js"></script>
+		<script src="assets/javascript/lightbox.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
-	<body class="fade-in" onLoad="initMain({'header':'home'});initCarousel()"></body>
+	<body class="fade-in" onLoad="initMain({'header':'home'});initCarousel();initLightbox()"></body>
 		<div id="header-bar-container" class="header-bar-container">
 		</div>
 		<div class="content-container">
@@ -44,7 +45,7 @@
 							</div>
 						</div>
 						<div class="b">
-							<img class="img-border" src="assets/images/common/reception-doorway.jpg">
+							<img class="img-border lightbox" src="assets/images/common/reception-doorway.jpg">
 						</div>
 					</div>
 					<div>
@@ -54,7 +55,7 @@
 					</div>
 					<div class="content-grid text-right">
 						<div class="a">
-							<img class="img-border" src="assets/images/common/clinic-room-doorway.jpg">
+							<img class="img-border lightbox" src="assets/images/common/clinic-room-doorway.jpg">
 						</div>
 						<div class="b">
 							<div class="headline">Private medical consulting rooms in a beautiful Victorian house</div>
@@ -83,24 +84,24 @@
 				<span class="message">Something else about insurance...</span>
 			</div>
 			<div class="content">
-					<div class="main-content-container">
-						<div>
-							<blockquote>
-								The Manchester Clinic is great!
-							</blockquote>
+				<div class="main-content-container">
+					<div>
+						<blockquote>
+							The Manchester Clinic is great!
+						</blockquote>
+					</div>
+					<div class="gold-box">	
+						<span class="large-text center headline">Accreditation</span>
+						<div class="img-slide-container" style="padding:40px">
+							<img width="300px" class="img-slide center-image" src="assets\images\home\\accreditation\cqc.png">
+							<img style="margin-top: -100px" height="100px" width="300px" class="img-shadow center-image" src="assets\images\misc\transparent-pixel.png">
 						</div>
-						<div class="gold-box">	
-							<span class="large-text center headline">Accreditation</span>
-							<div class="img-slide-container" style="padding:40px">
-								<img width="300px" class="img-slide center-image" src="assets\images\home\\accreditation\cqc.png">
-								<img style="margin-top: -100px" height="100px" width="300px" class="img-shadow center-image" src="assets\images\misc\transparent-pixel.png">
-							</div>
-							<p class="text-center">
-								Our commitment to providing exceptional quality is underpinned by an extensive schedule of clinical governance and quality assurance systems specifically designed to create and sustain high standards of care. We have in place a continuous improvement strategy that is driven in part by our patient representatives who have direct access to the Board of Directors. The strategy is based on delivering best practice and outcomes in everything we do.
-							</p>
-						</div>
+						<p class="text-center">
+							Our commitment to providing exceptional quality is underpinned by an extensive schedule of clinical governance and quality assurance systems specifically designed to create and sustain high standards of care. We have in place a continuous improvement strategy that is driven in part by our patient representatives who have direct access to the Board of Directors. The strategy is based on delivering best practice and outcomes in everything we do.
+						</p>
 					</div>
 				</div>
+			</div>
 		</div>
 		
 		<div id="footer-container" class="footer-container"></div>
