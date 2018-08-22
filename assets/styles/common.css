@@ -328,3 +328,10 @@ p {
 		bottom: 80px;
 	}
 }
+.img-border{
+	padding: 5px;
+	border: 1px solid #dddddd;
+}
+.img-border:hover{
+	border: 1px solid #a1917c;
+}

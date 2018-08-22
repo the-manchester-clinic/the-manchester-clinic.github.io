@@ -3,7 +3,6 @@ function initMain(parameters) {
 	imageFade()
 	imageSlide()
 	initFooter()
-	initLightbox()
 }
 
 function imageFade() {
