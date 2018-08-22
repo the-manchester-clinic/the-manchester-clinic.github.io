@@ -125,13 +125,6 @@
 .img-container {
 	width: 30%;
 }
-.img-border{
-	padding: 5px;
-	border: 1px solid #dddddd;
-}
-.img-border:hover{
-	border: 1px solid #a1917c;
-}
 .img-circle{
 	border-radius: 50%;
 }
