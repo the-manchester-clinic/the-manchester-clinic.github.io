@@ -102,7 +102,13 @@ function initLightbox() {
         $(".lightbox-img").attr("src", imgSrc)
         $(".lightbox-container").fadeIn()
 
-    })
+	})
+
+	const lightboxGallerySrc = `<div class="lightbox-gallery-overlay"></div>`	
+	$(".lightbox-gallery").click(function() {
+		$(".lightbox:eq(0)").click()
+	})
+	$(".lightbox-gallery").append($(lightboxGallerySrc))
 
     $(".lightbox-container .fa-chevron-right").click(function() {
         var srcObj = JSON.parse(sessionStorage.getItem("srcObj"))
