@@ -26,9 +26,10 @@ function initFooter() {
 }
 
 function initHeader(page) {
-	var homeCurrentClass = "";
-	var facilitiesCurrentClass = "";
-	var contactCurrentClass = "";
+	var homeCurrentClass;
+	var facilitiesCurrentClass;
+	var contactCurrentClass;
+	var theHouseCurrentClass;
 	
 	switch (page) {
 		case "home":
@@ -36,6 +37,9 @@ function initHeader(page) {
 			break;
 		case "facilities":
 			facilitiesCurrentClass = "current";
+			break;
+		case "theHouse":
+			theHouseCurrentClass = "current";
 			break;
 		case "contact":
 			contactCurrentClass = "current";
@@ -49,6 +53,7 @@ function initHeader(page) {
 				<span class="header-menu">
 					<span class="header-menu-item ${homeCurrentClass}"><a href="index.html">Home</a></span>
 					<span class="header-menu-item ${facilitiesCurrentClass}"><a href="facilities.html">Facilities</a></span>
+					<span class="header-menu-item ${theHouseCurrentClass}"><a href="the-house.html">The House</a></span>
 					<span class="header-menu-item ${contactCurrentClass}"><a href="contact.html">Contact us</a></span>
                 </span>
                 
@@ -58,11 +63,12 @@ function initHeader(page) {
 				<i class="fas fa-bars"></i>
 				<div class="menu-items" style="display:none;">
 					<div class="close-menu"><i class="fas fa-times"></i></div>
-					<table style="width:100%;">
-						<tr><td><a href="index.html">Home</a></td></tr>
-						<tr><td><a href="facilities.html">Facilities</a></td></tr>
-						<tr><td><a href="contact.html">Contact us</a></td></tr>
-					</table>
+					<div class="menu-items-links" style="width:100%;">
+						<a href="index.html">Home</a>
+						<a href="facilities.html">Facilities</a>
+						<a href="the-house.html">The House</a>
+						<a href="contact.html">Contact us</a>
+					</div>
 				</div>
 			</div> 
 			`;
@@ -77,4 +83,55 @@ function initHeader(page) {
 		$(".menu-items").slideUp()
 	})	
 
+}
+
+function initLightbox() {
+    const lightboxContainerSrc = `<div style="display:none" class="lightbox-container"><i class="fas fa-chevron-left"></i><img class="lightbox-img"><i class="fas fa-times"></i><i class="fas fa-chevron-right"></i></div>`
+    $("body").append(lightboxContainerSrc)
+    $(".lightbox").addClass("lightbox-hover")   
+
+    //display lightbox
+    $(".lightbox").click(function(){
+        var srcObj = {}
+        $(".lightbox").each(function(el) {
+            srcObj[el] = ($(this).attr("src")) 
+        })
+        var imgSrc = $(this).attr("src");
+        sessionStorage.setItem("srcObj", JSON.stringify(srcObj));
+            
+        $(".lightbox-img").attr("src", imgSrc)
+        $(".lightbox-container").fadeIn()
+
+    })
+
+    $(".lightbox-container .fa-chevron-right").click(function() {
+        var srcObj = JSON.parse(sessionStorage.getItem("srcObj"))
+        var imgSrc = $(".lightbox-img").attr("src");
+        var currentPosition = parseInt(Object.keys(srcObj).find(key => srcObj[key] === imgSrc))
+        if ( (currentPosition + 1) > (Object.keys(srcObj).length - 1) ) {
+            currentPosition = -1
+        }
+        $(".lightbox-img").attr("src", srcObj[currentPosition + 1])
+    })
+    
+    $(".lightbox-container .fa-chevron-left").click(function() {
+        var srcObj = JSON.parse(sessionStorage.getItem("srcObj"))
+        var imgSrc = $(".lightbox-img").attr("src");
+        var currentPosition = parseInt(Object.keys(srcObj).find(key => srcObj[key] === imgSrc))
+        if ( (currentPosition - 1) < 0 ) {
+            currentPosition = (Object.keys(srcObj).length)
+        }
+        $(".lightbox-img").attr("src", srcObj[currentPosition - 1])
+    })
+
+    // hide lightbox
+    $(".lightbox-container .fa-times").click(function(){
+        $(".lightbox-container").fadeOut()
+    })
+
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27) { // escape key maps to keycode `27`
+            $(".lightbox-container").fadeOut()
+        }
+    });
 }

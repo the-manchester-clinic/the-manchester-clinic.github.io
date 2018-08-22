@@ -18,7 +18,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
-	<body class="fade-in" onLoad="initMain({'header':'home'});initCarousel()"></body>
+	<body class="fade-in" onLoad="initMain({'header':'home'});initCarousel();initLightbox()"></body>
 		<div id="header-bar-container" class="header-bar-container">
 		</div>
 		<div class="content-container">
@@ -29,88 +29,78 @@
 			</div>
 			<div class="text-carousel">
 				<div class="carousel-container">
-					<table>
-						<tr>
-							<td class="headline">Private Medical Consulting Rooms in a Beautiful Victorian House</td>
-							<td class="typewriter"><div id="typewriter"></div></td>
-						</tr>
-					</table>
+						<div class="headline center">Private Medical Consulting Rooms in a Prestigious Location</div>
+						<div class="typewriter" id="typewriter"></div>
 				</div>
 			</div>
 			<div class="content">
-				<div class="main-content-container">
-					<table>
-						<tr>
-							<td class="text-container">
-								<div>
-									<div class="headline">Private medical consulting rooms in a beautiful Victorian house</div>
-									<p><a href="index.html">The Manchester Clinic</a> provides modern medical consulting rooms in the beautiful leafy surroundings of the Ellesmere Park conservation area.  With rooms available on both a sessional and occasional basis, The Manchester Clinic provides a range of services to consultants to suit their needs and the needs of their patients.</p>
-									<p>Less than 15 minutes&prime; drive from the city centre, The Manchester Clinic is well-connected with motorways, trains, trams & buses all within a short distance.  If you would like to know more about The Manchester Clinic, please take a look at our services &amp; prices, view photos of our beautiful house, or contact us for further information.</p>
-								</div>
-								<img class="img-border" src="assets/images/resized/garden-side-2.jpg">
-							</td>
-							<td class="img-container">
-								<img class="img-border" src="assets/images/resized/garden-side-2.jpg">
-							</td> 
-						</tr>
-					</table>	
+				<div class="main-content-container">	
+					<div class="content-grid text-left">
+						<div class="a">
+							<div class="headline">Private medical consulting rooms in a beautiful Victorian house</div>
+							<div>
+								<p><a href="index.html">The Manchester Clinic</a> provides modern medical consulting rooms in Ellesmere Park. With rooms available on both a sessional and occasional basis, The Manchester Clinic provides a range of services to consultants to suit their needs and the needs of their patients.</p>
+								<p>Less than a 15 minute drive from the city centre, The Manchester Clinic is well-connected.  If you would like to know more about The Manchester Clinic, please take a look at our services &amp; prices, view photos of our beautiful house, or contact us for further information.</p>
+							</div>
+						</div>
+						<div class="b">
+							<img class="img-border lightbox" src="assets/images/common/reception-doorway.jpg">
+						</div>
+					</div>
 					<div>
 						<blockquote>
 							That Padma Ilango is really something...
 						</blockquote>
 					</div>
-					<table>
-						<tr>
-							<td class="img-container">
-								<img class="img-border" src="assets/images/resized/garden-side-2.jpg">
-							</td> 
-							<td class="text-container">
-								<div>
-									<div class="headline">Private medical consulting rooms in a beautiful Victorian house</div>
-									<p><a href="index.html">The Manchester Clinic</a> provides modern medical consulting rooms in the beautiful leafy surroundings of the Ellesmere Park conservation area.  With rooms available on both a sessional and occasional basis, The Manchester Clinic provides a range of services to consultants to suit their needs and the needs of their patients.</p>
-									<p>Less than 15 minutes&prime; drive from the city centre, The Manchester Clinic is well-connected with motorways, trains, trams & buses all within a short distance.  If you would like to know more about The Manchester Clinic, please take a look at our services &amp; prices, view photos of our beautiful house, or contact us for further information.</p>
-								</div>
-								<img class="img-border" src="assets/images/resized/garden-side-2.jpg">
-							</td>
-						</tr>
-					</table>  
+					<div class="content-grid text-right">
+						<div class="a">
+							<img class="img-border lightbox" src="assets/images/common/clinic-room-doorway.jpg">
+						</div>
+						<div class="b">
+							<div class="headline">Private medical consulting rooms in a beautiful Victorian house</div>
+							<div>
+								<p><a href="index.html">The Manchester Clinic</a> provides modern medical consulting rooms in Ellesmere Park. With rooms available on both a sessional and occasional basis, The Manchester Clinic provides a range of services to consultants to suit their needs and the needs of their patients.</p>
+								<p>Less than a 15 minute drive from the city centre, The Manchester Clinic is well-connected.  If you would like to know more about The Manchester Clinic, please take a look at our services &amp; prices, view photos of our beautiful house, or contact us for further information.</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="blue-box">		
 				<span class="headline">We are approved by all major insurance providers</span><br>
 				<div class="insurance-box">
-					<img class="gray a" src="assets\images\insurance\bupa.jpg">
-					<img class="gray b" src="assets\images\insurance\axa-ppp.jpg">
-					<img class="gray c" src="assets\images\insurance\aviva.jpg">
-					<img class="gray d" src="assets\images\insurance\wpa.jpg">
-					<img class="gray e" src="assets\images\insurance\cigna.jpg">
-					<img class="gray f" src="assets\images\insurance\benenden.jpg">
-					<img class="gray g" src="assets\images\insurance\simply-health.jpg">
-					<img class="gray h" src="assets\images\insurance\vitality.jpg">
+					<img class="gray a" src="assets\images\home\insurance\bupa.jpg">
+					<img class="gray b" src="assets\images\home\insurance\axa-ppp.jpg">
+					<img class="gray c" src="assets\images\home\insurance\aviva.jpg">
+					<img class="gray d" src="assets\images\home\insurance\wpa.jpg">
+					<img class="gray e" src="assets\images\home\insurance\cigna.jpg">
+					<img class="gray f" src="assets\images\home\insurance\benenden.jpg">
+					<img class="gray g" src="assets\images\home\insurance\simply-health.jpg">
+					<img class="gray h" src="assets\images\home\insurance\vitality.jpg">
 				</div>	
 
 				
 				<span class="message">Something else about insurance...</span>
 			</div>
 			<div class="content">
-					<div class="main-content-container">
-						<div>
-							<blockquote>
-								The Manchester Clinic is great!
-							</blockquote>
+				<div class="main-content-container">
+					<div>
+						<blockquote>
+							The Manchester Clinic is great!
+						</blockquote>
+					</div>
+					<div class="gold-box">	
+						<span class="large-text center headline">Accreditation</span>
+						<div class="img-slide-container" style="padding:40px">
+							<img width="300px" class="img-slide center-image" src="assets\images\home\\accreditation\cqc.png">
+							<img style="margin-top: -100px" height="100px" width="300px" class="img-shadow center-image" src="assets\images\misc\transparent-pixel.png">
 						</div>
-						<div class="gold-box">	
-							<span class="large-text center headline">Accreditation</span>
-							<div class="img-slide-container" style="padding:40px">
-								<img width="300px" class="img-slide center-image" src="assets\images\accreditation\cqc.png">
-								<img style="margin-top: -100px" height="100px" width="300px" class="img-shadow center-image" src="assets\images\misc\transparent-pixel.png">
-							</div>
-							<p>
-								The Manchester Clinic has CQC Accreditation.
-							</p>
-						</div>
+						<p class="text-center">
+							Our commitment to providing exceptional quality is underpinned by an extensive schedule of clinical governance and quality assurance systems specifically designed to create and sustain high standards of care. We have in place a continuous improvement strategy that is driven in part by our patient representatives who have direct access to the Board of Directors. The strategy is based on delivering best practice and outcomes in everything we do.
+						</p>
 					</div>
 				</div>
+			</div>
 		</div>
 		
 		<div id="footer-container" class="footer-container"></div>

@@ -1,9 +1,4 @@
-@media (max-width: 992px) {
-	.content {
-		max-width: 100%;
-	}
-}
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
 	.carousel-container .headline {
 		display: none;
 	}
@@ -16,11 +11,12 @@
 		top: 193px;
 	}
 }
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
 	.carousel-container .headline {
 		display: flex;
 	}
 	.typewriter {
+		padding-right: 20px;
 		width: 45%
 	}
 	.text-carousel {
@@ -30,25 +26,31 @@
 }
 
 @media (max-width: 1278px) {
-	.img-container {
-		display: none;
+	.content-grid {
+		grid-template-columns: auto;
+		grid-template-rows: auto auto;
 	}
-	.text-container img {
-		display: table-cell;
-		max-width: 60%;
-		margin-right: 15%;
+	.content-grid.text-left {
+		grid-template-areas: "a" "b";
+	}
+	.content-grid.text-right {
+		grid-template-areas: "b" "a";
+	}
+	.content {
+		max-width: 97%;
 	}
 }
 
 @media (min-width: 1278px) {
-	tr .text-container{
-		padding: 30px 0 0 0;
+	.content-grid {
+		grid-template-rows: auto;
+		grid-template-areas: "a b";
 	}
-	.text-container img {
-		display: none;
+	.content-grid.text-left {
+		grid-template-columns: 70% 30%;
 	}
-	.img-container {
-		display: table-cell;
+	.content-grid.text-right {
+		grid-template-columns: 30% 70%;
 	}
 	.text-carousel {
 		top: 110px;
@@ -89,13 +91,15 @@
     height: inherit;
 }
 .carousel-container .headline {
-	text-align: center;
-	width: 50%;
+	padding: 0 20px;
+	width: 45%;
 	border-right: 1px solid rgba(255, 255, 255, 0.5); 
 	align-items: center;
 	float: left;
 }
 .typewriter {
+	padding: 20px;
+	text-align: center;
 	font-size: 140%;
 	color: #a1917c;
 	font-family: 'Merriweather', serif;
@@ -103,11 +107,21 @@
 	float: right;
 }
 
-tr .text-container{
-	padding: 30px;
-	width: 70%;
-	text-align: justify;
+.content-grid {
+	display: grid;
+	height: auto;
+	margin: 20px;
 }
+.content-grid .a, .content-grid .b {
+	margin: auto;
+	padding: 20px;
+}
+.content-grid img{
+	max-width: 390px;
+	width: 100%;
+	height: auto;
+}
+
 .img-container {
 	width: 30%;
 }
@@ -117,11 +131,6 @@ tr .text-container{
 }
 .img-border:hover{
 	border: 1px solid #a1917c;
-}
-tr img{
-	width: 100%;
-	float: right;
-	height: auto;
 }
 .img-circle{
 	border-radius: 50%;
@@ -175,7 +184,6 @@ tr img{
 }
 
 .center.headline {
-    display: grid;
     text-align: center;
 }
 .large-text {
@@ -209,4 +217,3 @@ display: inline;
 	width: -webkit-fill-available;
 	max-width: 330px;
 }
-
