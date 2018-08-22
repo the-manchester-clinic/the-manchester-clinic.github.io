@@ -281,6 +281,7 @@ p {
 	position:   fixed; 
 	justify-content: center;
 	align-items: center;
+	display: flex;
 }
 .lightbox-hover {
 	cursor: pointer;
@@ -295,6 +296,7 @@ p {
 	-o-user-select: none;
 	user-select: none;
 	width: 70%;
+	max-width: 1000px;
 }
 .lightbox-container .fas{
 	cursor: pointer;
@@ -302,9 +304,13 @@ p {
 	font-size: 60px;
 	color: #a1917c;
 }
+.lightbox-container .fas:hover {
+	color: #d4bda0;
+}
 .lightbox-container .fa-times {
 	position: fixed;
-	bottom: 10px;
+	bottom: 2px;
+	padding: 0;
 }
 @media (max-width : 768px) {
 	.lightbox-img {
@@ -321,5 +327,8 @@ p {
 	}
 	.lightbox-container .fa-chevron-right {
 		right: 10px
+	}
+	.lightbox-container .fa-times {
+		bottom: 80px;
 	}
 }

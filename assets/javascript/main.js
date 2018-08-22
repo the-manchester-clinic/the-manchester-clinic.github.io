@@ -3,6 +3,7 @@ function initMain(parameters) {
 	imageFade()
 	imageSlide()
 	initFooter()
+	initLightbox()
 }
 
 function imageFade() {
@@ -77,4 +78,55 @@ function initHeader(page) {
 		$(".menu-items").slideUp()
 	})	
 
+}
+
+function initLightbox() {
+    const lightboxContainerSrc = `<div style="display:none" class="lightbox-container"><i class="fas fa-chevron-left"></i><img class="lightbox-img"><i class="fas fa-times"></i><i class="fas fa-chevron-right"></i></div>`
+    $("body").append(lightboxContainerSrc)
+    $(".lightbox").addClass("lightbox-hover")   
+
+    //display lightbox
+    $(".lightbox").click(function(){
+        var srcObj = {}
+        $(".lightbox").each(function(el) {
+            srcObj[el] = ($(this).attr("src")) 
+        })
+        var imgSrc = $(this).attr("src");
+        sessionStorage.setItem("srcObj", JSON.stringify(srcObj));
+            
+        $(".lightbox-img").attr("src", imgSrc)
+        $(".lightbox-container").fadeIn()
+
+    })
+
+    $(".lightbox-container .fa-chevron-right").click(function() {
+        var srcObj = JSON.parse(sessionStorage.getItem("srcObj"))
+        var imgSrc = $(".lightbox-img").attr("src");
+        var currentPosition = parseInt(Object.keys(srcObj).find(key => srcObj[key] === imgSrc))
+        if ( (currentPosition + 1) > (Object.keys(srcObj).length - 1) ) {
+            currentPosition = -1
+        }
+        $(".lightbox-img").attr("src", srcObj[currentPosition + 1])
+    })
+    
+    $(".lightbox-container .fa-chevron-left").click(function() {
+        var srcObj = JSON.parse(sessionStorage.getItem("srcObj"))
+        var imgSrc = $(".lightbox-img").attr("src");
+        var currentPosition = parseInt(Object.keys(srcObj).find(key => srcObj[key] === imgSrc))
+        if ( (currentPosition - 1) < 0 ) {
+            currentPosition = (Object.keys(srcObj).length)
+        }
+        $(".lightbox-img").attr("src", srcObj[currentPosition - 1])
+    })
+
+    // hide lightbox
+    $(".lightbox-container .fa-times").click(function(){
+        $(".lightbox-container").fadeOut()
+    })
+
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27) { // escape key maps to keycode `27`
+            $(".lightbox-container").fadeOut()
+        }
+    });
 }
