@@ -27,9 +27,10 @@ function initFooter() {
 }
 
 function initHeader(page) {
-	var homeCurrentClass = "";
-	var facilitiesCurrentClass = "";
-	var contactCurrentClass = "";
+	var homeCurrentClass;
+	var facilitiesCurrentClass;
+	var contactCurrentClass;
+	var theHouseCurrentClass;
 	
 	switch (page) {
 		case "home":
@@ -37,6 +38,9 @@ function initHeader(page) {
 			break;
 		case "facilities":
 			facilitiesCurrentClass = "current";
+			break;
+		case "theHouse":
+			theHouseCurrentClass = "current";
 			break;
 		case "contact":
 			contactCurrentClass = "current";
@@ -50,6 +54,7 @@ function initHeader(page) {
 				<span class="header-menu">
 					<span class="header-menu-item ${homeCurrentClass}"><a href="index.html">Home</a></span>
 					<span class="header-menu-item ${facilitiesCurrentClass}"><a href="facilities.html">Facilities</a></span>
+					<span class="header-menu-item ${theHouseCurrentClass}"><a href="the-house.html">The House</a></span>
 					<span class="header-menu-item ${contactCurrentClass}"><a href="contact.html">Contact us</a></span>
                 </span>
                 
@@ -59,11 +64,12 @@ function initHeader(page) {
 				<i class="fas fa-bars"></i>
 				<div class="menu-items" style="display:none;">
 					<div class="close-menu"><i class="fas fa-times"></i></div>
-					<table style="width:100%;">
-						<tr><td><a href="index.html">Home</a></td></tr>
-						<tr><td><a href="facilities.html">Facilities</a></td></tr>
-						<tr><td><a href="contact.html">Contact us</a></td></tr>
-					</table>
+					<div class="menu-items-links" style="width:100%;">
+						<a href="index.html">Home</a>
+						<a href="facilities.html">Facilities</a>
+						<a href="the-house.html">The House</a>
+						<a href="contact.html">Contact us</a>
+					</div>
 				</div>
 			</div> 
 			`;

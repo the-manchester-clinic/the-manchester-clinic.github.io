@@ -136,16 +136,14 @@ p {
 	z-index: 9999;
 	top: 0;
 	background: white;
-	display: none;
 }
-.menu-items table {
-	text-align: center;
-	font-weight: 100;
+.menu-items-links {
 	font-variant: small-caps;
+	display: grid;
 }
-.menu-items td{
-	border-bottom: 1px solid #a1917c;
+.menu-items-links a{
 	padding: 10px;
+	border-bottom: 1px solid #a1917c 
 }
 .close-menu {
 	position: absolute;
@@ -188,8 +186,6 @@ p {
 .clear-float {
 	clear: both;
 }
-
-.footer-container {}
 
 .footer {
 	padding: 4px 0px;
