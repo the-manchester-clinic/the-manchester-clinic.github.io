@@ -14,7 +14,7 @@ function imageTransitions() {
 }
 
 function imageFade() {
-    $(".fade-in").css("opacity","1")
+	$(".fade-in").css("opacity","1")
 }
 
 function imageSlide() {
