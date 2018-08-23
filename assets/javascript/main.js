@@ -1,3 +1,6 @@
+initFooter()
+
+
 function initMain(parameters) {
 	initHeader(parameters.header)
 	imageFade()
@@ -21,8 +24,11 @@ function imageSlide() {
 }
 			
 function initFooter() {
-    const footerHTML = `<div class="footer">&copy; 2018 The Manchester Clinic.  All rights reserved.</div>`;
-	$("#footer-container").append(footerHTML);
+	const footerHTML = `<div class="footer">&copy; 2018 The Manchester Clinic.  All rights reserved.</div>`;
+
+	$("#footer-container").ready(function() {
+		$("#footer-container").append(footerHTML);
+	})
 }
 
 function initHeader(page) {
