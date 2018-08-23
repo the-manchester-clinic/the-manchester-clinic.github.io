@@ -1,11 +1,16 @@
-initFooter()
+$("#footer-container").ready(function() {
+	initFooter()
+})
+
+$("#header-bar-container").ready(function() {
+	const page = $('meta[name=page-title]').attr("content");
+	initHeader(page)
+})
 
 
-function initMain(parameters) {
-	initHeader(parameters.header)
+function imageTransitions() {
 	imageFade()
 	imageSlide()
-	initFooter()
 }
 
 function imageFade() {
@@ -25,10 +30,8 @@ function imageSlide() {
 			
 function initFooter() {
 	const footerHTML = `<div class="footer">&copy; 2018 The Manchester Clinic.  All rights reserved.</div>`;
+	$("#footer-container").append(footerHTML);
 
-	$("#footer-container").ready(function() {
-		$("#footer-container").append(footerHTML);
-	})
 }
 
 function initHeader(page) {
@@ -44,7 +47,7 @@ function initHeader(page) {
 		case "facilities":
 			facilitiesCurrentClass = "current";
 			break;
-		case "theHouse":
+		case "the-house":
 			theHouseCurrentClass = "current";
 			break;
 		case "contact":
