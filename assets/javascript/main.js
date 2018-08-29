@@ -209,7 +209,6 @@ function initLightbox() {
 		const swipeDirection = Object.keys(swipeDirections).reduce((a, b) => swipeDirections[a] > swipeDirections[b] ? a : b);
 		const swipeDirectionMagnitude = Object.values(swipeDirections).reduce((a, b) => Math.max(a, b));
 		const elementWidth = $(".lightbox-img img").width();
-		console.log(swipeDirectionMagnitude / elementWidth)
 		
 
 		// tap

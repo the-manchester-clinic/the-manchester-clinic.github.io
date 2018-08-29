@@ -3,6 +3,12 @@
     src: url(../fonts/CapitalisTypOasis.ttf);
 }
 
+@media (max-width: 385px) {
+	.logo::after {
+		font-size: 16px;
+	}
+}
+
 /* burger break-point */
 @media (max-width: 1278px) {
 	.header-menu {

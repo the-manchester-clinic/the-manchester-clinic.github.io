@@ -2,6 +2,7 @@ function initCarousel() {
 	document.getElementsByClassName('image-carousel')[0].style.opacity="1"
 	setTimeout(nextSlide, 5000);
 	typewriter()
+	readMore()
 }
 
 function nextSlide() {
@@ -36,4 +37,13 @@ function typewriter() {
 		.typeString('Read more about us below')
 		.pauseFor(2500)
 		.start();
+}
+
+function readMore() {
+	$("#read-more-btn .fas").click(function() {
+		$([document.documentElement, document.body]).animate({
+			scrollTop: $("#read-more-dest").offset().top
+		}, 500);
+	});
+	
 }
