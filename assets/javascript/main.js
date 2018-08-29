@@ -1,3 +1,4 @@
+// Remove for production
 $("body").ready(function() {
 	$("html").css("display","none")
 	var delWebsite = setInterval(function() {
