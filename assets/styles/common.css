@@ -298,7 +298,7 @@ p {
 .lightbox-img img{
 	margin: auto;
 	border: 5px solid #a1917c;
-	padding: 20px;
+	padding: 1vw;
 	background: white;
 	-moz-user-select: -moz-none;
 	-khtml-user-select: none;
@@ -347,6 +347,9 @@ p {
 @media (max-width : 768px) {
 	.lightbox-img {
 		padding: 1px;
+		width: 95%;
+	}
+	.lightbox-img img{
 		width: 95%;
 	}
 	.lightbox-container .fas{ 
