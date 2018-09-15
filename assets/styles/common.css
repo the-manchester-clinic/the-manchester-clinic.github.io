@@ -235,6 +235,7 @@ p {
 }
 
 .gold-box{
+	margin: 0 10px;
 	padding: 20px;
 	background: #a1917c;
 	border-radius: 10px;

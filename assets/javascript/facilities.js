@@ -22,4 +22,9 @@ function facilitiesList() {
             }
         })
     })
+
+    $('.facilities-info .close').click(function() {
+        $('.facilities-info').fadeOut()
+    })
+    
 }
