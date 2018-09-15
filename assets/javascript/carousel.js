@@ -34,7 +34,13 @@ function typewriter() {
 	typewriter.typeString('Welcome to The Manchester Clinic')
 		.pauseFor(2500)
 		.deleteAll()
-		.typeString('Read more about us below')
+		.typeString('Situated in Ellesmere Park')
+		.pauseFor(2500)
+		.deleteAll()
+		.typeString('We Offer Bespoke Consulting Rooms')
+		.pauseFor(2500)
+		.deleteChars(24)
+		.typeString('Conference Rooms')
 		.pauseFor(2500)
 		.start();
 }
