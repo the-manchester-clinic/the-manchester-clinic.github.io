@@ -200,6 +200,7 @@
 }
 .insurance-box img{
 	display: inline-grid;
+	min-width: 85px;
 	max-width: 150px;
 	width: 50%;
 	padding: 5px;
@@ -276,4 +277,7 @@ display: inline;
 	#read-more-btn {
 		display: none;
 	}
+}
+.message {
+	margin: 0 10vw;
 }

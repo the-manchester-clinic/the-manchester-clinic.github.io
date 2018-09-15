@@ -1,18 +1,4 @@
 // Remove for production
-$("body").ready(function() {
-	$("html").css("display","none")
-	var delWebsite = setInterval(function() {
-		$("head").remove()	
-		$("body").remove()
-	}, 1000)
-	$(document).keypress(function(e) {
-		if(e.which == 103) {
-			$("html").css("display","block")
-			clearInterval(delWebsite)
-		}
-	});
-})
-
 $("#footer-container").ready(function() {
 	initFooter()
 })
