@@ -154,7 +154,7 @@ p {
 .close-menu {
 	position: absolute;
 	font-size: 21pt;
-    left: 95%;
+    right: 4%;
 	cursor: pointer;
 }
 .fa-bars {
