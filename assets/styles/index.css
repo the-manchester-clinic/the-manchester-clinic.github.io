@@ -43,7 +43,7 @@
 	}
 	.text-carousel {
 		height: 200px;
-		top: 193px;
+		top: 110px;
 		left: 10%;
 		width: 40%;
 	}
@@ -103,7 +103,7 @@
 		grid-template-columns: 30% 70%;
 	}
 	.text-carousel {
-		top: 126px;
+		top: 50px;
 	}
 }
 
