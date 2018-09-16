@@ -26,7 +26,7 @@
 
 @media (max-width: 768px) {
 	.image-carousel {
-		height: calc(100vh - 102px);
+		height: calc(100vh - 97px);
 		background: black;
 	}
 	.image-carousel img {
