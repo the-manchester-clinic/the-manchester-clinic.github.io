@@ -65,10 +65,10 @@ function initHeader(page) {
 	
 	var headerHTML = `
 			<div class="header-bar">
-				<a class="logo" href="index.html">
+				<a class="logo" href="/">
 				</a>
 				<span class="header-menu">
-					<span class="header-menu-item ${homeCurrentClass}"><a href="index.html">Home</a></span>
+					<span class="header-menu-item ${homeCurrentClass}"><a href="/">Home</a></span>
 					<span class="header-menu-item ${facilitiesCurrentClass}"><a href="facilities.html">Facilities</a></span>
 					<span class="header-menu-item ${theHouseCurrentClass}"><a href="the-house.html">The House</a></span>
 					<span class="header-menu-item ${contactCurrentClass}"><a href="contact.html">Contact us</a></span>
