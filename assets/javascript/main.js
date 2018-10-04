@@ -157,11 +157,11 @@ function initLightbox() {
 	}
 
 	$(".lightbox-container .fa-chevron-right").click(function() {
-		previous()
+		next()
 	})
     
     $(".lightbox-container .fa-chevron-left").click(function() {
-        next()
+        previous()
     })
 
     // hide lightbox
