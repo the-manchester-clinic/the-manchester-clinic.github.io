@@ -1,121 +1,138 @@
 <html>
-	<head>
-		<title>The Manchester Clinic</title>
-		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-		<link rel="manifest" href="site.webmanifest">
-		<link rel="mask-icon" href="safari-pinned-tab.svg" color="#a1917c">
-		<meta name="msapplication-TileColor" content="#2b5797">
-		<meta name="theme-color" content="#ffffff">
-		<link href="https://fonts.googleapis.com/css?family=Lato|Merriweather:300" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="assets/styles/common.css"></link>
-		<link rel="stylesheet" type="text/css" href="assets/styles/index.css"></link>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="assets/javascript/carousel.js"></script>
-		<script src="assets/javascript/main.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="page-title" content="home">
-	</head>
-	<body class="fade-in" onLoad="imageTransitions();initCarousel();initLightbox()"></body>
-		<div id="header-bar-container" class="header-bar-container">
-		</div>
-		<div class="content-container">
-			<div class="image-carousel">
-				<img class="image-slide" style="display:visible" id="clinic-entrance" src="assets/images/carousel/clinic-entrance.jpg"></img>
-				<img class="image-slide" style="display:none" id="reception" src="assets/images/carousel/reception.jpg"></img>
-				<img class="image-slide" style="display:none" id="stained-glass" src="assets/images/carousel/stained-glass.jpg"></img> 
-				<div class="text-carousel">
-					<div class="carousel-container">
-							<div class="headline center">
-								Private Medical Consulting Rooms Tailored To Your Needs
-								<div id="read-more-btn"><i class="fas fa-chevron-down"></i></div>
-							</div>
-							<div class="typewriter" id="typewriter"></div>
+
+<head>
+	<title>The Manchester Clinic</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#a1917c">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="theme-color" content="#ffffff">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Merriweather:300" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/styles/common.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="assets/javascript/carousel.js"></script>
+	<script src="assets/javascript/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="page-title" content="home">
+</head>
+
+<body class="fade-in" onLoad="imageTransitions();initCarousel();initLightbox();initVideo('https://player.vimeo.com/video/314814576?autoplay=1&color=a1917c&title=0&byline=0&portrait=0');"></body>
+	<div id="header-bar-container" class="header-bar-container">
+	</div>
+	<div class="content-container">
+		<div class="image-carousel">
+			<img class="image-slide" style="display:visible" id="clinic-entrance" src="assets/images/carousel/clinic-entrance.jpg">
+			<img class="image-slide" style="display:none" id="reception" src="assets/images/carousel/reception.jpg">
+			<img class="image-slide" style="display:none" id="stained-glass" src="assets/images/carousel/stained-glass.jpg">
+			<div class="text-carousel">
+				<div class="carousel-container">
+					<div class="headline center">
+						Private Medical Consulting Rooms Tailored To Your Needs
+						<div id="read-more-btn"><i class="fas fa-chevron-down"></i></div>
 					</div>
-				</div>
-			</div>
-			
-			<div class="content" id="read-more-dest">
-				<div class="main-content-container">	
-					<div class="content-grid text-left">
-						<div class="a">
-							<div class="headline">We provide flexibility without compromise</div>
-							<div>
-								<p>
-									<strong>The Manchester Clinic</strong> provides modern medical consulting rooms for practitioners to suit their needs and the needs of their patients. We provide flexible options and services seven days a week.
-								</p>
-								<p>
-									The Manchester Clinic has free parking and is well-connected, only a 15 minute drive from the city centre.
-								</p>
-							</div>
-						</div>
-						<div class="b">
-							<img class="img-border lightbox" src="assets/images/common/reception-doorway.jpg">
-						</div>
-					</div>
-					<div>
-						<blockquote>
-							The services provided at The Manchester Clinic are world class and the staff are welcoming and friendly.
-						</blockquote>
-					</div>
-					<div class="content-grid text-right">
-						<div class="a">
-							<img class="img-border lightbox" src="assets/images/common/clinic-room-doorway.jpg">
-						</div>
-						<div class="b">
-							<div class="headline">State of the art facilities set in an elegant property</div>
-							<div>
-								<p>
-									The house is a Victorian property with magnificent windows, ceilings and chandeliers in a welcoming safe and clean environment.
-								</p>
-								<p>	
-									We have conference facilities for business meetings, workshops and product launches in idyllic surroundings.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="blue-box">		
-				<span class="headline">We are approved by all major insurance providers</span><br>
-				<div class="insurance-box">
-					<img class="gray a" src="assets\images\home\insurance\bupa.jpg">
-					<img class="gray b" src="assets\images\home\insurance\axa-ppp.jpg">
-					<img class="gray c" src="assets\images\home\insurance\aviva.jpg">
-					<img class="gray d" src="assets\images\home\insurance\wpa.jpg">
-					<img class="gray e" src="assets\images\home\insurance\cigna.jpg">
-					<img class="gray f" src="assets\images\home\insurance\benenden.jpg">
-					<img class="gray g" src="assets\images\home\insurance\simply-health.jpg">
-					<img class="gray h" src="assets\images\home\insurance\vitality.jpg">
-				</div>	
-				<div class="message">
-					We have in place a continuous improvement strategy that is based on delivering the best practices and outcomes in everything we do.
-				</div>
-			</div>
-			<div class="content">
-				<div class="main-content-container">
-					<div>
-						<blockquote>
-							The consulting rooms are beautifully decorated and make for an excellent place to hold my clinics.
-						</blockquote>
-					</div>
-					<div class="gold-box">	
-						<span class="large-text center headline">Accreditation</span>
-						<div class="img-slide-container" style="padding:40px">
-							<img width="300px" class="img-slide center-image" src="assets\images\home\\accreditation\cqc.png">
-							<img style="margin-top: -100px" height="100px" width="300px" class="img-shadow center-image" src="assets\images\misc\transparent-pixel.png">
-						</div>
-						<p class="text-center">
-							Our commitment to providing exceptional quality is underpinned by an extensive schedule of clinical governance and quality assurance systems specifically designed to create and sustain high standards of care.
-						</p>
-					</div>
+					<div class="typewriter" id="typewriter"></div>
 				</div>
 			</div>
 		</div>
 		
-		<div id="footer-container" class="footer-container"></div>
-	</body>
+		<div class="video-container">
+				<div class="headline">
+						Have a look at what we offer...
+				</div>
+				<div class="headline"></div>
+		</div>
+		
+		<script src="https://player.vimeo.com/api/player.js"></script>
+
+		<div class="content" id="read-more-dest">
+			<div class="main-content-container">
+				<div class="content-grid text-left">
+					<div class="a">
+						<div class="headline">We provide flexibility without compromise</div>
+						<div>
+							<p>
+								<strong>The Manchester Clinic</strong> provides modern medical consulting rooms for practitioners to suit their
+								needs and the needs of their patients. We provide flexible options and services seven days a week.
+							</p>
+							<p>
+								The Manchester Clinic has free parking and is well-connected, only a 15 minute drive from the city centre.
+							</p>
+						</div>
+					</div>
+					<div class="b">
+						<img class="img-border lightbox" src="assets/images/common/reception-doorway.jpg">
+					</div>
+				</div>
+				<div>
+					<blockquote>
+						The services provided at The Manchester Clinic are world class and the staff are welcoming and friendly.
+					</blockquote>
+				</div>
+				<div class="content-grid text-right">
+					<div class="a">
+						<img class="img-border lightbox" src="assets/images/common/clinic-room-doorway.jpg">
+					</div>
+					<div class="b">
+						<div class="headline">State of the art facilities set in an elegant property</div>
+						<div>
+							<p>
+								The house is a Victorian property with magnificent windows, ceilings and chandeliers in a welcoming safe and
+								clean environment.
+							</p>
+							<p>
+								We have conference facilities for business meetings, workshops and product launches in idyllic surroundings.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="blue-box">
+			<span class="headline">We are approved by all major insurance providers</span><br>
+			<div class="insurance-box">
+				<img class="gray a" src="assets\images\home\insurance\bupa.jpg">
+				<img class="gray b" src="assets\images\home\insurance\axa-ppp.jpg">
+				<img class="gray c" src="assets\images\home\insurance\aviva.jpg">
+				<img class="gray d" src="assets\images\home\insurance\wpa.jpg">
+				<img class="gray e" src="assets\images\home\insurance\cigna.jpg">
+				<img class="gray f" src="assets\images\home\insurance\benenden.jpg">
+				<img class="gray g" src="assets\images\home\insurance\simply-health.jpg">
+				<img class="gray h" src="assets\images\home\insurance\vitality.jpg">
+			</div>
+			<div class="message">
+				We have in place a continuous improvement strategy that is based on delivering the best practices and outcomes in
+				everything we do.
+			</div>
+		</div>
+		<div class="content">
+			<div class="main-content-container">
+				<div>
+					<blockquote>
+						The consulting rooms are beautifully decorated and make for an excellent place to hold my clinics.
+					</blockquote>
+				</div>
+				<div class="gold-box">
+					<span class="large-text center headline">Accreditation</span>
+					<div class="img-slide-container" style="padding:40px">
+						<img width="300px" class="img-slide center-image" src="assets\images\home\\accreditation\cqc.png">
+						<img style="margin-top: -100px" height="100px" width="300px" class="img-shadow center-image" src="assets\images\misc\transparent-pixel.png">
+					</div>
+					<p class="text-center">
+						Our commitment to providing exceptional quality is underpinned by an extensive schedule of clinical governance and
+						quality assurance systems specifically designed to create and sustain high standards of care.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer-container" class="footer-container"></div>
+</body>
+
 </html>

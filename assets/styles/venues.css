@@ -1,0 +1,79 @@
+.venue-grid div {
+  background: #000a30;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  min-height: 110px;
+  max-height: 200px;
+}
+
+.venue-grid .summary {
+  font-variant: small-caps;
+  position: relative;
+}
+
+.venue-grid .icon {
+  min-height: 0;
+  font-size: 35px;
+}
+
+.small-print {
+  font-size: 12px;
+  text-align: center;
+}
+
+.venue-hover-hidden {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.venue-hover-display {
+  display: grid;
+  opacity: 1;
+  transition: opacity 0.4s;
+}
+
+.image-container {
+  display: grid;
+  justify-content: center;
+}
+.image-container img {
+  max-width: 500px;
+  width: 80%;
+  justify-self: center;
+}
+
+.venue-grid {
+  display: grid;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+@media (min-width: 568px) {
+  .venue-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "." "." "." "." "." ".";
+    grid-gap: 10px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 568px) {
+  .venue-grid {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: ". ." ". ." ". .";
+  }
+}
+
+@media (min-width: 768px) {
+  .venue-grid {
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto;
+    grid-template-areas: ". . ." ". . .";
+  }
+}

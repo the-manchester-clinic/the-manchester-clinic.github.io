@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 21% 21% 21% 21%;
   grid-gap: 30px;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .gallery img {
@@ -15,17 +15,17 @@
   display: none;
 }
 
-@media (max-width : 1278px) {
+@media (max-width: 1278px) {
   .gallery {
     grid-template-columns: 30% 30% 30%;
   }
 }
-@media (max-width : 768px) {
+@media (max-width: 768px) {
   .gallery {
     grid-template-columns: 40% 40%;
   }
 }
-@media (max-width : 500px) {
+@media (max-width: 500px) {
   .gallery {
     display: none;
   }
@@ -34,11 +34,7 @@
     justify-content: center;
     padding: 20px;
   }
-  .lightbox-gallery img{
+  .lightbox-gallery img {
     width: 100%;
   }
 }
-
-
-
-

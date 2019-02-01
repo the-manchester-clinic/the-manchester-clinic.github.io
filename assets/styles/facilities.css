@@ -1,117 +1,120 @@
-.content{
-	margin: 20px auto;
+.content {
+  margin: 20px auto;
 }
 .intro-text {
-	padding: 0px 20px;
-	text-align: center;
+  padding: 0px 20px;
+  text-align: center;
 }
 .outro-text {
-	padding: 20px;
-	text-align: center;
+  padding: 20px;
+  text-align: center;
 }
 
 .side-image-container {
-	width: 30%;
-	float: left;
+  width: 30%;
+  float: left;
 }
 .side-image-inner-container {
-	margin: 20px 0px 20px 20px;
-	overflow: hidden;
+  margin: 20px 0px 20px 20px;
+  overflow: hidden;
 }
 .side-image {
-	height: 650px;
+  height: 650px;
 }
 
 .main-content-container {
-	width: 70%;
-	float: left;
+  width: 70%;
+  float: left;
 }
 .main-content {
-	padding: 20px;
+  padding: 20px;
 }
 
 .facilities-list {
-	display: grid;
-	grid-template-columns: auto auto auto;
-	align-content: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-content: center;
 }
 .facilities-list .title {
-	padding: 10px 0;
-	font-weight: 900;
-	text-align: center;
+  padding: 10px 0;
+  font-weight: 900;
+  text-align: center;
 }
-.facilities-list img{
-	border-radius: 8px;
-	margin: auto;
-	height: 330px;
-	width: 260px;
-}
-.facilities-list .item:hover{
-	cursor: pointer;
-}
-.facilities-list .item {
-	display: grid;
-	color: #000;
+.facilities-list img {
+  border-radius: 8px;
+  margin: auto;
+  height: 330px;
+  width: 260px;
 }
 .facilities-list .item:hover {
-	color: #a1917c
+  cursor: pointer;
+}
+.facilities-list .item {
+  display: grid;
+  color: #000;
+}
+.facilities-list .item:hover {
+  color: #a1917c;
 }
 
 .facilities-info {
-	color: #b6b6b6;
-	margin: 20px 80px;
-	padding: 20px 50px;
-	background: #000519;
-	border-radius: 10px;
-	text-align: center;
-
+  color: #b6b6b6;
+  margin: 20px 80px;
+  padding: 20px 50px;
+  background: #000519;
+  border-radius: 10px;
+  text-align: center;
 }
 .facilities-info .title {
-	font-size: 26px;
-	font-weight: 900;
+  font-size: 26px;
+  font-weight: 900;
 }
 .facilities-info .text {
-	margin: 10px 0;
+  margin: 10px 0;
 }
 .facilities-info .close {
-	letter-spacing: 7px;
-	text-transform: uppercase;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	padding: 25px 0;
-	border-top: 1px solid #a1917c;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 0;
+  border-top: 1px solid #a1917c;
 }
 .facilities-info .close:hover {
-	color: #a1917c;
-	border-top: 1px solid #b6b6b6;
+  color: #a1917c;
+  border-top: 1px solid #b6b6b6;
 }
 @media (max-width: 900px) {
-	.facilities-list img{
-		height: 38vw;
-		width: 29vw;
-	}
+  .facilities-list img {
+    height: 38vw;
+    width: 29vw;
+  }
 }
 @media (max-width: 600px) {
-	.facilities-list img{
-		height: 330px;
-		width: 260px;
-	}
-	.facilities-info {
-		position: fixed;
-		top: 0;
-		margin: 0;
-		left: 0;
-		border-radius: 0;
-		height: 100%;
-	}
-	.facilities-list {
-		grid-template-columns: auto;
-	}
+  .facilities-list img {
+    height: 330px;
+    width: 260px;
+  }
+  .facilities-info {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    left: 0;
+    border-radius: 0;
+    height: 100%;
+  }
+  .facilities-list {
+    grid-template-columns: auto;
+  }
 }
 @media (min-width: 600px) {
-	.facilities-info .close {
-		display: none;
-	}
+  .facilities-info .close {
+    display: none;
+  }
+}
+
+.text a {
+  color: white;
 }
