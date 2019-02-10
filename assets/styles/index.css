@@ -298,14 +298,18 @@ blockquote p {
   margin: 0 10vw;
 }
 
-.video {
-  background: #000829;
-  padding: 33% 0 0 0;
-  position: relative;
-}
-
 .video-container .headline {
   background: #000829;
   text-align: center;
   padding: 20px;
+}
+
+.video-container {
+  display: grid;
+  background: #000829;
+}
+
+#video {
+  justify-self: center;
+  width: 75%;
 }
