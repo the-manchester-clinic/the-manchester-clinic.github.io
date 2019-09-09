@@ -47,7 +47,7 @@ function imageSlide() {
 }
 
 function initFooter() {
-  const footerHTML = `<div class="footer">&copy; 2018 The Manchester Clinic.  All rights reserved.</div>`;
+  const footerHTML = `<div class="footer">&copy; 2019 The Manchester Clinic.  All rights reserved.</div>`;
   $("#footer-container").append(footerHTML);
 }
 
@@ -57,6 +57,7 @@ function initHeader(page) {
   var contactCurrentClass;
   var theHouseCurrentClass;
   var venuesCurrentClass;
+  var consultantsCurrentClass;
 
   switch (page) {
     case "home":
@@ -74,6 +75,9 @@ function initHeader(page) {
     case "venues":
       venuesCurrentClass = "current";
       break;
+    case "consultants":
+      consultantsCurrentClass = "current";
+      break;
   }
 
   var headerHTML = `
@@ -84,7 +88,8 @@ function initHeader(page) {
 					<span class="header-menu-item ${homeCurrentClass}"><a href="/">Home</a></span>
 					<span class="header-menu-item ${facilitiesCurrentClass}"><a href="facilities.html">Facilities</a></span>
 					<span class="header-menu-item ${theHouseCurrentClass}"><a href="the-house.html">The House</a></span>
-					<span class="header-menu-item ${venuesCurrentClass}"><a href="venues.html">Venues</a></span>
+          <span class="header-menu-item ${venuesCurrentClass}"><a href="venues.html">Venues</a></span>
+					<span class="header-menu-item ${consultantsCurrentClass}"><a href="consultants.html">Consultants</a></span>          
 					<span class="header-menu-item ${contactCurrentClass}"><a href="contact.html">Contact us</a></span>
                 </span>
                 

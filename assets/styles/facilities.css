@@ -118,3 +118,19 @@
 .text a {
   color: white;
 }
+
+.content-grid {
+  display: grid;
+  height: auto;
+  margin: 0 20px;
+}
+.content-grid .a,
+.content-grid .b {
+  margin: auto;
+  padding: 20px;
+}
+.content-grid img {
+  max-width: 390px;
+  width: 100%;
+  height: auto;
+}

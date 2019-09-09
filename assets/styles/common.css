@@ -10,7 +10,7 @@
 }
 
 /* burger break-point */
-@media (max-width: 1278px) {
+@media (max-width: 1370px) {
   .header-menu {
     display: none;
   }
@@ -34,7 +34,7 @@
   }
 }
 
-@media (min-width: 1278px) {
+@media (min-width: 1370px) {
   .menu {
     display: none;
   }
@@ -385,4 +385,8 @@ p {
 
 .center {
   text-align: center;
+}
+
+.bold {
+  font-weight: bold;
 }
