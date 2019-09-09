@@ -103,7 +103,8 @@ function initHeader(page) {
 						<a href="index.html">Home</a>
 						<a href="facilities.html">Facilities</a>
 						<a href="the-house.html">The House</a>
-						<a href="venues.html">Venues</a>
+            <a href="venues.html">Venues</a>
+						<a href="consultants.html">Consultants</a>            
 						<a href="contact.html">Contact us</a>
 					</div>
 				</div>
