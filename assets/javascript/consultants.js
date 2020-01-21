@@ -1,9 +1,7 @@
 var consultantInfo = {
   bilango: {
     name: "Mr Balakrishnan Ilango",
-    bio: `Mr Ilango is a Consultant Orthopaedic Surgeon at the Pennine Acute Hospitals NHS Trust since 2001. He completed his orthopaedic training on the Northwest Orthopaedic Training Programme. He completed MSc degree in Orthopaedic Engineering at Cardiff University, obtained fellowships from the London and Irish colleges. He is also an examiner for FRCS Trauma & Orthopaedics.<p>
-
-    Mr Ilango specialises in Hip And Knee Surgery. He has extensive experience in dealing with arthritis of the hip and knee, Hip and Knee Replacements, Arthoscopy of the Knee, Partial Knee Replacement and ACL Reconstruction. In addition, he performs surgery for Carpal Tunnel syndrome, Trigger finger, Tennis Elbow and Foot Deformities - Bunion, Toe Deformities and Arthritis of Big Toe.`
+    bio: ``
   },
   lmuir: {
     name: "Mr Lindsay Muir",
