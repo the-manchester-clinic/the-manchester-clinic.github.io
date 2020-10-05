@@ -44,17 +44,17 @@ var consultantInfo = {
   },
   jayer: {
     name: "Dr Jean Ayer",
-    bio: `Dr Jean Ayer is an award winning, UK trained Consultant Dermatologist and Honorary Senior Clinical Lecturer at the University of Manchester. She is on the GMC Specialist Register, and works in the NHS in both Manchester and Cheshire. She is trained in Paediatric and Adult Dermatology. 
+    bio: `Dr Jean Ayer is an award winning, UK trained Consultant Dermatologist and Honorary Senior Clinical Lecturer at the University of Manchester. She is on the GMC Specialist Register, and works in the NHS in both Manchester and Cheshire. She is trained in Paediatric and Adult Dermatology.<p>
 
-      She has expertise in all aspects of General Dermatology (including acne, rosacea, psoriasis, eczema, allergic reactions, hair and nail disorders) and Surgical Dermatology. Her specialist interests include sunlight induced skin disorders, skin cancer treatments (surgical and non-surgical), photodynamic therapy and phototherapy.
+      She has expertise in all aspects of General Dermatology (including acne, rosacea, psoriasis, eczema, allergic reactions, hair and nail disorders) and Surgical Dermatology. Her specialist interests include sunlight induced skin disorders, skin cancer treatments (surgical and non-surgical), photodynamic therapy and phototherapy.<p>
 
-      She works as a substantive Consultant in Dermatology at Salford Royal NHS Foundation Trust, and also at Vernova Health Care, Macclesfield.
+      She works as a substantive Consultant in Dermatology at Salford Royal NHS Foundation Trust, and also at Vernova Health Care, Macclesfield.<p>
 
-      She graduated from Imperial College, London, with MBBS and BSc(Hons) in Medical Management. She spent her elective research period at the University of California after being awarded two British Association of Dermatology prizes and two further elective grant awards. This allowed her to publish and present her research internationally as an undergraduate. 
+      She graduated from Imperial College, London, with MBBS and BSc(Hons) in Medical Management. She spent her elective research period at the University of California after being awarded two British Association of Dermatology prizes and two further elective grant awards. This allowed her to publish and present her research internationally as an undergraduate.<p>
 
-      After her general medical training in several of London’s leading teaching hospitals, she undertook her Dermatology training in Manchester. During this time, she gained her medical doctorate (MD) at the University of Manchester. Her thesis, in the field of photoageing, gained the University of Manchester Postgraduate Research Prize for the best PhD/MD presentation. She is also a Fellow of the Royal College of Physicians (FRCP). 
+      After her general medical training in several of London’s leading teaching hospitals, she undertook her Dermatology training in Manchester. During this time, she gained her medical doctorate (MD) at the University of Manchester. Her thesis, in the field of photoageing, gained the University of Manchester Postgraduate Research Prize for the best PhD/MD presentation. She is also a Fellow of the Royal College of Physicians (FRCP).<p>
 
-      Dr Ayer is a member of the British Association of Dermatologists, British Photodermatology Group, American Academy of Dermatologists and the European Association of Dermatovenerologists. She also serves as a committee member for the British Association of Dermatologists Education Committee and British Photodermatology Group Committee. She is an academic advisor for medical students at the University of Manchester. She is heavily involved in the design and development of the Dermatology curriculum for registrars and photodermatology fellows for the British Association of Dermatologists. 
+      Dr Ayer is a member of the British Association of Dermatologists, British Photodermatology Group, American Academy of Dermatologists and the European Association of Dermatovenerologists. She also serves as a committee member for the British Association of Dermatologists Education Committee and British Photodermatology Group Committee. She is an academic advisor for medical students at the University of Manchester. She is heavily involved in the design and development of the Dermatology curriculum for registrars and photodermatology fellows for the British Association of Dermatologists.<p>
 
       Dr Ayer is well published, and is frequently asked to speak at national and international meetings. She was recently recognised as one of the lead consultants in the prestigious BMJ Dermatology Team of the Year in Vernova Healthcare, Macclesfield.
     `
