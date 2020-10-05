@@ -41,7 +41,7 @@ var consultantInfo = {
       With a keen interest in sport Mr Jain has worked with a number of sports clubs and associations both amateur and professional including Wolverhampton Wanderers FC, Barrow Raiders RLFC, Bury FC, University of British Columbia Thunderbirds, Vancouver Canadians (Baseball), Winnipeg Blue Bombers (American Football) and Vancouver Canucks (Ice Hockey). He has also collaborated with the Football Association (The FA) with recent projects to help decrease the injury rates in the England National Football team.<p>
       
       Sport is also Mr Neil Jain's main form of entertainment in his spare time; in particular he attends as many live events as possible, recently including the FIFA World Cup in Brazil, the European Rugby Champions Cup Final in Rugby Union, World Championship Boxing as well as the annual NFL games held at Wembley Stadium in London. He attends the gym regularly and plays golf and tennis when possible, he is a novice skier but is looking to improve!`
-  }
+  },
   jayer: {
     name: "Dr Jean Ayer",
     bio: `Dr Jean Ayer is an award winning, UK trained Consultant Dermatologist and Honorary Senior Clinical Lecturer at the University of Manchester. She is on the GMC Specialist Register, and works in the NHS in both Manchester and Cheshire. She is trained in Paediatric and Adult Dermatology. 
