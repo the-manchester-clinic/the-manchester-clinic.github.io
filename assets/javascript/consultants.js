@@ -2,21 +2,21 @@ var consultantInfo = {
   bilango: {
     name: "Mr Balakrishnan Ilango",
     bio: `Mr Ilango is a specialist in hip and Knee problems.<p>
-      Current Appointments
-      • The Manchester Clinic
-      • Honorary Senior Lecturer, Edgehill University,
+      Current Appointments <br />
+      • The Manchester Clinic <br />
+      • Honorary Senior Lecturer, Edgehill University, <br />
       • Examiner - FRCS Trauma &amp; Orthopaedics<p>
-      Publications, Lectures and Teaching
-      • Past Reviewer of the Journal of Bone and Joint Surgery
-      • Published articles in National and International Journals
-      • Lectures in National and International Meetings on Hip and Knee Surgery
+      Publications, Lectures and Teaching <br />
+      • Past Reviewer of the Journal of Bone and Joint Surgery <br />
+      • Published articles in National and International Journals <br />
+      • Lectures in National and International Meetings on Hip and Knee Surgery <br />
       • Visiting professor at International Universities for teaching and training Orthopaedic Postgraduate doctors and teaching Medical Students<p>
-      Member
-      • Royal College of Surgeons, England
-      • British Hip Society
-      • British Association for Surgery of the Knee
+      Member <br />
+      • Royal College of Surgeons, England <br />
+      • British Hip Society <br />
+      • British Association for Surgery of the Knee <br />
       • Fellow of Royal College of England
-`
+    `
   },
   lmuir: {
     name: "Mr Lindsay Muir",
@@ -76,18 +76,18 @@ var consultantInfo = {
   jdoyle: {
     name: "Mr James Doyle",
     bio: `Mr Doyle specialises in spine problems.<p>
-    Current Appointments
-    • The Highfield Hospital
-    • The Manchester Clinic
-    • Honorary Senior Lecturer Edgehill University
-    • Reviewer Bone &amp; Joint Journal
+    Current Appointments <br />
+    • The Highfield Hospital <br />
+    • The Manchester Clinic <br />
+    • Honorary Senior Lecturer Edgehill University <br />
+    • Reviewer Bone &amp; Joint Journal <br />
     • Examiner - MCh Edgehill University<p> 
-    Member
-    • British Orthopaedic Association
-    • British Trauma Society
-    • British Association of Spine Surgeons
+    Member <br />
+    • British Orthopaedic Association <br />
+    • British Trauma Society <br />
+    • British Association of Spine Surgeons <br />
     • Fellow of Royal College of Surgeons Ireland<p> 
-    Publications
+    Publications <br />
     • Research publications in National and International journals
     `
   }
