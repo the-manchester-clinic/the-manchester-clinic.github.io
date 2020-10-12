@@ -1,8 +1,22 @@
 var consultantInfo = {
   bilango: {
     name: "Mr Balakrishnan Ilango",
-    bio: `Mr Ilango is a Consultant Orthopaedic Surgeon at the Pennine Acute Hospitals NHS Trust since 2001. He completed his orthopaedic training on the Northwest Orthopaedic Training Programme. He completed MSc degree in Orthopaedic Engineering at Cardiff University, obtained fellowships from the London and Irish colleges. He is also an examiner for FRCS Trauma & Orthopaedics.<p>
-    Mr Ilango specialises in Hip And Knee Surgery. He has extensive experience in dealing with arthritis of the hip and knee, Hip and Knee Replacements, Arthoscopy of the Knee, Partial Knee Replacement and ACL Reconstruction. In addition, he performs surgery for Carpal Tunnel syndrome, Trigger finger, Tennis Elbow and Foot Deformities - Bunion, Toe Deformities and Arthritis of Big Toe.`
+    bio: `Mr Ilango is a specialist in hip and Knee problems.<p>
+      Current Appointments
+      • The Manchester Clinic
+      • Honorary Senior Lecturer, Edgehill University,
+      • Examiner - FRCS Trauma &amp; Orthopaedics<p>
+      Publications, Lectures and Teaching
+      • Past Reviewer of the Journal of Bone and Joint Surgery
+      • Published articles in National and International Journals
+      • Lectures in National and International Meetings on Hip and Knee Surgery
+      • Visiting professor at International Universities for teaching and training Orthopaedic Postgraduate doctors and teaching Medical Students<p>
+      Member
+      • Royal College of Surgeons, England
+      • British Hip Society
+      • British Association for Surgery of the Knee
+      • Fellow of Royal College of England
+`
   },
   lmuir: {
     name: "Mr Lindsay Muir",
@@ -57,6 +71,24 @@ var consultantInfo = {
       Dr Ayer is a member of the British Association of Dermatologists, British Photodermatology Group, American Academy of Dermatologists and the European Association of Dermatovenerologists. She also serves as a committee member for the British Association of Dermatologists Education Committee and British Photodermatology Group Committee. She is an academic advisor for medical students at the University of Manchester. She is heavily involved in the design and development of the Dermatology curriculum for registrars and photodermatology fellows for the British Association of Dermatologists.<p>
 
       Dr Ayer is well published, and is frequently asked to speak at national and international meetings. She was recently recognised as one of the lead consultants in the prestigious BMJ Dermatology Team of the Year in Vernova Healthcare, Macclesfield.
+    `
+  },
+  jdoyle: {
+    name: "Mr James Doyle",
+    bio: `Mr Doyle specialises in spine problems.<p>
+    Current Appointments
+    • The Highfield Hospital
+    • The Manchester Clinic
+    • Honorary Senior Lecturer Edgehill University
+    • Reviewer Bone &amp; Joint Journal
+    • Examiner - MCh Edgehill University<p> 
+    Member
+    • British Orthopaedic Association
+    • British Trauma Society
+    • British Association of Spine Surgeons
+    • Fellow of Royal College of Surgeons Ireland<p> 
+    Publications
+    • Research publications in National and International journals
     `
   }
 };
