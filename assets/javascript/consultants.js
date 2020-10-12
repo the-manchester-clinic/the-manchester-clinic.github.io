@@ -2,16 +2,16 @@ var consultantInfo = {
   bilango: {
     name: "Mr Balakrishnan Ilango",
     bio: `Mr Ilango is a specialist in hip and Knee problems.<p>
-      Current Appointments <br />
+      <strong>Current Appointments</strong> <p>
       • The Manchester Clinic <br />
       • Honorary Senior Lecturer, Edgehill University, <br />
       • Examiner - FRCS Trauma &amp; Orthopaedics<p>
-      Publications, Lectures and Teaching <br />
+      <strong>Publications, Lectures and Teaching</strong> <p>
       • Past Reviewer of the Journal of Bone and Joint Surgery <br />
-      • Published articles in National and International Journals <br />
+      • Multiple publications in National and International Journals <br />
       • Lectures in National and International Meetings on Hip and Knee Surgery <br />
       • Visiting professor at International Universities for teaching and training Orthopaedic Postgraduate doctors and teaching Medical Students<p>
-      Member <br />
+      <strong>Member</strong> <P>
       • Royal College of Surgeons, England <br />
       • British Hip Society <br />
       • British Association for Surgery of the Knee <br />
@@ -76,19 +76,19 @@ var consultantInfo = {
   jdoyle: {
     name: "Mr James Doyle",
     bio: `Mr Doyle specialises in spine problems.<p>
-    Current Appointments <br />
+    <strong>Current Appointments<strong /><p>
     • The Highfield Hospital <br />
     • The Manchester Clinic <br />
     • Honorary Senior Lecturer Edgehill University <br />
     • Reviewer Bone &amp; Joint Journal <br />
     • Examiner - MCh Edgehill University<p> 
-    Member <br />
+    <strong>Member</strong> <p>
     • British Orthopaedic Association <br />
     • British Trauma Society <br />
     • British Association of Spine Surgeons <br />
     • Fellow of Royal College of Surgeons Ireland<p> 
     Publications <br />
-    • Research publications in National and International journals
+    • Multiple publications in National and International journals
     `
   }
 };
