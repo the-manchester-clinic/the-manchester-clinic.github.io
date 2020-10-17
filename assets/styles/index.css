@@ -87,10 +87,11 @@
   height: 100%;
   width: 100%;
   grid-area: b;
+  border: 10px solid #000829;
 }
 @media(min-width: 871px) {
   .video-video {
-    top: calc(-5vw);
+    top: calc(-4vw);
     position: absolute;
   }
 }
@@ -103,7 +104,7 @@
 
 .banner-content-container {
   background: #000829;
-  height: calc(300px - 5vw);
+  height: calc(300px - 4vw);
 }
 @media(max-width: 1000px) {
   .banner-content-container {
