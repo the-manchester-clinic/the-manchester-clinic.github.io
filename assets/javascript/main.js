@@ -56,7 +56,6 @@ function initHeader(page) {
   var facilitiesCurrentClass;
   var contactCurrentClass;
   var theHouseCurrentClass;
-  var venuesCurrentClass;
   var consultantsCurrentClass;
 
   switch (page) {
@@ -72,9 +71,6 @@ function initHeader(page) {
     case "contact":
       contactCurrentClass = "current";
       break;
-    case "venues":
-      venuesCurrentClass = "current";
-      break;
     case "consultants":
       consultantsCurrentClass = "current";
       break;
@@ -86,11 +82,10 @@ function initHeader(page) {
 				</a>
 				<span class="header-menu">
 					<span class="header-menu-item ${homeCurrentClass}"><a href="/">Home</a></span>
-					<span class="header-menu-item ${facilitiesCurrentClass}"><a href="facilities.html">Facilities</a></span>
-					<span class="header-menu-item ${theHouseCurrentClass}"><a href="the-house.html">The House</a></span>
-          <span class="header-menu-item ${venuesCurrentClass}"><a href="venues.html">Venues</a></span>
-					<span class="header-menu-item ${consultantsCurrentClass}"><a href="consultants.html">Consultants</a></span>          
-					<span class="header-menu-item ${contactCurrentClass}"><a href="contact.html">Contact us</a></span>
+					<span class="header-menu-item ${theHouseCurrentClass}"><a href="the-house.html">The Clinic</a></span>
+					<span class="header-menu-item ${consultantsCurrentClass}"><a href="consultants.html">Consultants</a></span>
+          <span class="header-menu-item ${facilitiesCurrentClass}"><a href="facilities.html">Facilities</a></span>
+					<span class="header-menu-item ${contactCurrentClass}"><a href="contact.html">Contact Us</a></span>
                 </span>
                 
                 <div class="clear-float"></div>
@@ -101,11 +96,10 @@ function initHeader(page) {
 					<div class="close-menu"><i class="fas fa-times"></i></div>
 					<div class="menu-items-links" style="width:100%;">
 						<a href="index.html">Home</a>
+            <a href="the-house.html">The Clinic</a>
+            <a href="consultants.html">Consultants</a>
 						<a href="facilities.html">Facilities</a>
-						<a href="the-house.html">The House</a>
-            <a href="venues.html">Venues</a>
-						<a href="consultants.html">Consultants</a>            
-						<a href="contact.html">Contact us</a>
+						<a href="contact.html">Contact Us</a>
 					</div>
 				</div>
 			</div> 

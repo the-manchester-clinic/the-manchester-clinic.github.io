@@ -22,33 +22,23 @@
 	<meta name="page-title" content="home">
 </head>
 
-<body class="fade-in" onLoad="imageTransitions();initCarousel();initLightbox();initVideo('https://player.vimeo.com/video/314814576?autoplay=1&color=a1917c&title=0&byline=0&portrait=0');"></body>
+<body class="fade-in" onLoad="imageTransitions();initLightbox();initVideo('https://player.vimeo.com/video/314814576?autoplay=1&color=a1917c&title=0&byline=0&portrait=0');"></body>
 	<div id="header-bar-container" class="header-bar-container">
 	</div>
 	<div class="content-container">
-		<div class="image-carousel">
-			<img class="image-slide" style="display:visible" id="clinic-entrance" src="assets/images/carousel/clinic-entrance.jpg">
-			<img class="image-slide" style="display:none" id="reception" src="assets/images/carousel/reception.jpg">
-			<img class="image-slide" style="display:none" id="stained-glass" src="assets/images/carousel/stained-glass.jpg">
-			<div class="text-carousel">
-				<div class="carousel-container">
-					<div class="headline center">
-						Private Medical Consulting Rooms Tailored To Your Needs
-						<div id="read-more-btn"><i class="fas fa-chevron-down"></i></div>
-					</div>
-					<div class="typewriter" id="typewriter"></div>
-				</div>
+		<div class="banner-image-container">
+			<img class="banner-image" src="assets/images/carousel/clinic-entrance.jpg">
+		</div>
+	</div>
+	<div class="content-container banner-content-container">
+		<div class="video-container content">
+			<div class="video-quote">
+				The services provided at The Manchester Clinic are world class and the staff are welcoming and friendly.
 			</div>
+			<div class="video-video" id="video"></div>
 		</div>
-		
-		<div class="video-container" id="read-more-dest">
-				<div class="headline">
-						Have a look at what we offer...
-				</div>
-				<div id="video"></div>
-				<div class="headline"></div>
-		</div>
-		
+	</div>
+	<div class="content-container">
 		<script src="https://player.vimeo.com/api/player.js"></script>
 
 		<div class="content">
@@ -83,7 +73,7 @@
 						<div class="headline">State of the art facilities set in an elegant property</div>
 						<div>
 							<p>
-								The house is a Victorian property with magnificent windows, ceilings and chandeliers in a welcoming safe and
+								The clinic is a Victorian property with magnificent windows, ceilings and chandeliers in a welcoming safe and
 								clean environment.
 							</p>
 							<p>
