@@ -47,7 +47,7 @@ function imageSlide() {
 }
 
 function initFooter() {
-  const footerHTML = `<div class="footer">&copy; 2019 The Manchester Clinic.  All rights reserved.</div>`;
+  const footerHTML = '<div class="footer">&copy; 2019 The Manchester Clinic.  All rights reserved.</div>';
   $("#footer-container").append(footerHTML);
 }
 
@@ -76,34 +76,35 @@ function initHeader(page) {
       break;
   }
 
-  var headerHTML = `
-			<div class="header-bar">
-				<a class="logo" href="/">
-				</a>
-				<span class="header-menu">
-					<span class="header-menu-item ${homeCurrentClass}"><a href="/">Home</a></span>
-					<span class="header-menu-item ${theHouseCurrentClass}"><a href="the-house.html">The Clinic</a></span>
-					<span class="header-menu-item ${consultantsCurrentClass}"><a href="consultants.html">Consultants</a></span>
-          <span class="header-menu-item ${facilitiesCurrentClass}"><a href="facilities.html">Facilities</a></span>
-					<span class="header-menu-item ${contactCurrentClass}"><a href="contact.html">Contact Us</a></span>
-                </span>
-                
-                <div class="clear-float"></div>
-            </div>
-			<div class="menu">
-				<i class="fas fa-bars"></i>
-				<div class="menu-items" style="display:none;">
-					<div class="close-menu"><i class="fas fa-times"></i></div>
-					<div class="menu-items-links" style="width:100%;">
-						<a href="index.html">Home</a>
-            <a href="the-house.html">The Clinic</a>
-            <a href="consultants.html">Consultants</a>
-						<a href="facilities.html">Facilities</a>
-						<a href="contact.html">Contact Us</a>
-					</div>
-				</div>
-			</div> 
-			`;
+  // template string not used for IE compatibility
+  var headerHTML = '\
+			<div class="header-bar">\
+				<a class="logo" href="/">\
+				</a>\
+				<span class="header-menu">\
+					<span class="header-menu-item '+homeCurrentClass+'"><a href="/">Home</a></span>\
+					<span class="header-menu-item '+theHouseCurrentClass+'"><a href="the-house.html">The Clinic</a></span>\
+					<span class="header-menu-item '+consultantsCurrentClass+'"><a href="consultants.html">Consultants</a></span>\
+          <span class="header-menu-item '+facilitiesCurrentClass+'"><a href="facilities.html">Facilities</a></span>\
+					<span class="header-menu-item '+contactCurrentClass+'"><a href="contact.html">Contact Us</a></span>\
+                </span>\
+                \
+                <div class="clear-float"></div>\
+            </div>\
+			<div class="menu">\
+				<i class="fas fa-bars"></i>\
+				<div class="menu-items" style="display:none;">\
+					<div class="close-menu"><i class="fas fa-times"></i></div>\
+					<div class="menu-items-links" style="width:100%;">\
+						<a href="index.html">Home</a>\
+            <a href="the-house.html">The Clinic</a>\
+            <a href="consultants.html">Consultants</a>\
+						<a href="facilities.html">Facilities</a>\
+						<a href="contact.html">Contact Us</a>\
+					</div>\
+				</div>\
+			</div> \
+			';
 
   $("#header-bar-container").append(headerHTML);
 
@@ -117,15 +118,16 @@ function initHeader(page) {
 }
 
 function initLightbox() {
-  const lightboxContainerSrc = `
-	<div style="display:none" id="lightbox-container" class="lightbox-container">
-		<i class="fas fa-chevron-left"></i>
-		<div class="lightbox-img">
-			<img class="lightbox-img">
-			<div class="dismiss-text" >Click outside the image to close the gallery</div>
-		</div>
-		<i class="fas fa-chevron-right"></i>
-	</div>`;
+  // template string not used for IE compatibility
+  const lightboxContainerSrc = '\
+	<div style="display:none" id="lightbox-container" class="lightbox-container">\
+		<i class="fas fa-chevron-left"></i>\
+		<div class="lightbox-img">\
+			<img class="lightbox-img">\
+			<div class="dismiss-text" >Click outside the image to close the gallery</div>\
+		</div>\
+		<i class="fas fa-chevron-right"></i>\
+	</div>';
 
   $("body").append(lightboxContainerSrc);
   $(".lightbox").addClass("lightbox-hover");
@@ -143,7 +145,7 @@ function initLightbox() {
     $(".lightbox-container").fadeIn();
   });
 
-  const lightboxGallerySrc = `<div class="lightbox-gallery-overlay"></div>`;
+  const lightboxGallerySrc = '<div class="lightbox-gallery-overlay"></div>';
   $(".lightbox-gallery").click(function() {
     $(".lightbox:eq(0)").click();
   });
@@ -153,7 +155,10 @@ function initLightbox() {
     var srcObj = JSON.parse(sessionStorage.getItem("srcObj"));
     var imgSrc = $(".lightbox-img").attr("src");
     var currentPosition = parseInt(
-      Object.keys(srcObj).find(key => srcObj[key] === imgSrc)
+      Object.keys(srcObj).find(function(key) {
+        // arrow function not used for IE compatibility
+        return srcObj[key] === imgSrc;
+      })
     );
     if (currentPosition + 1 > Object.keys(srcObj).length - 1) {
       currentPosition = -1;
@@ -165,7 +170,10 @@ function initLightbox() {
     var srcObj = JSON.parse(sessionStorage.getItem("srcObj"));
     var imgSrc = $(".lightbox-img").attr("src");
     var currentPosition = parseInt(
-      Object.keys(srcObj).find(key => srcObj[key] === imgSrc)
+      Object.keys(srcObj).find(function(key) {
+        // arrow function not used for IE compatibility
+        return srcObj[key] === imgSrc;
+      })
     );
     if (currentPosition - 1 < 0) {
       currentPosition = Object.keys(srcObj).length;
@@ -239,11 +247,15 @@ function initLightbox() {
       up: up,
       down: down
     };
-    const swipeDirection = Object.keys(swipeDirections).reduce((a, b) =>
-      swipeDirections[a] > swipeDirections[b] ? a : b
-    );
+    const swipeDirection = Object.keys(swipeDirections).reduce(function(a, b) {
+      // arrow function not used for IE compatibility
+      return swipeDirections[a] > swipeDirections[b] ? a : b;
+    });
     const swipeDirectionMagnitude = Object.values(swipeDirections).reduce(
-      (a, b) => Math.max(a, b)
+      function(a, b) {
+        // arrow function not used for IE compatibility
+        return Math.max(a, b); 
+      }
     );
     const elementWidth = $(".lightbox-img img").width();
 
@@ -281,6 +293,7 @@ function initLightbox() {
 }
 
 function initVideo(src) {
-  var video = `<script src="https://fast.wistia.com/embed/medias/e6fzrr78nz.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_e6fzrr78nz videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/e6fzrr78nz/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>`;
+  // template string not used for IE compatibility
+  var video = '<script src="https://fast.wistia.com/embed/medias/e6fzrr78nz.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_e6fzrr78nz videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/e6fzrr78nz/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>';
   $(".video-container #video").append(video);
 }
