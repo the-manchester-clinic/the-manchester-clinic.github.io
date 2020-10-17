@@ -178,11 +178,16 @@ p {
   margin: 20px auto;
   padding-bottom: 40px;
   width: 1000px;
-    max-width: 97%;
+  max-width: 97%;
 }
 @media (max-width: 1278px) {
   .content {
     max-width: 97%;
+  }
+}
+@media (max-width: 870px) {
+  .content {
+    max-width: 100%;
   }
 }
 
