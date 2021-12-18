@@ -84,7 +84,6 @@ function initHeader(page) {
 				<span class="header-menu">\
 					<span class="header-menu-item '+homeCurrentClass+'"><a href="/">Home</a></span>\
 					<span class="header-menu-item '+theHouseCurrentClass+'"><a href="the-house.html">The Clinic</a></span>\
-					<span class="header-menu-item '+consultantsCurrentClass+'"><a href="consultants.html">Consultants</a></span>\
           <span class="header-menu-item '+facilitiesCurrentClass+'"><a href="facilities.html">Facilities</a></span>\
 					<span class="header-menu-item '+contactCurrentClass+'"><a href="contact.html">Contact Us</a></span>\
                 </span>\
@@ -98,7 +97,6 @@ function initHeader(page) {
 					<div class="menu-items-links" style="width:100%;">\
 						<a href="index.html">Home</a>\
             <a href="the-house.html">The Clinic</a>\
-            <a href="consultants.html">Consultants</a>\
 						<a href="facilities.html">Facilities</a>\
 						<a href="contact.html">Contact Us</a>\
 					</div>\
